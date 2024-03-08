@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   whoIsSpeaking: Test
-  textColour: {r: 0, g: 1, b: 0.0854764, a: 0}
+  textColour: {r: 0, g: 1, b: 0.0854764, a: 1}
