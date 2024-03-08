@@ -8,7 +8,7 @@ public class Scene : ScriptableObject
 {
     public List<Sentence> sentences;
     public Sprite backgroundSprite;
-    public Scene scene;
+    public Scene nextScene;
 
     [System.Serializable]
     public struct Sentence
