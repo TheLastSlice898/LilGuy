@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8eecb1e25745b4492d4de24ccb89f5, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: 
-  whoIsSpeaking: Test
-  textColour: {r: 0, g: 1, b: 0.0854764, a: 1}
+  whoIsSpeaking: Bluey
+  textColour: {r: 0.54901963, g: 0.7686275, b: 0.9215687, a: 1}

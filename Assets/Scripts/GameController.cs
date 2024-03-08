@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
                 {
                     scene = scene.nextScene;
                     bottomBar.PlayScene(scene);
-                    //backgroundController.SwitchImage(currentScene.background);
+                   
                 }
                 else
                 {
