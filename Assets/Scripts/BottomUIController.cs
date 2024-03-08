@@ -21,7 +21,9 @@ public class BottomUIController : MonoBehaviour
     }
     void Start()
     {
-        StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text)); 
+        StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
+        characterNameText.text = currentScene.sentences[sentenceIndex].character.whoIsSpeaking;
+        characterNameText.color = currentScene.sentences[sentenceIndex].character.textColour; 
     }
 
     
