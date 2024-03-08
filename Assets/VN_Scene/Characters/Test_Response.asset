@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d8eecb1e25745b4492d4de24ccb89f5, type: 3}
-  m_Name: YourCharater 1
+  m_Name: Test_Response
   m_EditorClassIdentifier: 
   whoIsSpeaking: Test Response
   textColour: {r: 1, g: 0.7137909, b: 0, a: 0}
