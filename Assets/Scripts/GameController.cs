@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public Scene scene;
+    public NextScene scene;
     public BottomUIController bottomBar;
+
     void Start()
     {
         bottomBar.PlayScene(scene);
@@ -33,4 +35,7 @@ public class GameController : MonoBehaviour
         }
         
     }
+
+
+
 }

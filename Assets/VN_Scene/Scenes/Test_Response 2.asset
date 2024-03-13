@@ -10,16 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7851c7c534f7eb409570c1cf8f1c76e, type: 3}
-  m_Name: Test_Sence
+  m_Name: Test_Response 2
   m_EditorClassIdentifier: 
   sentences:
-  - text: hi my namer is test
-    character: {fileID: 11400000, guid: 5cdb433d0cfca4545be07504d554c252, type: 2}
-  - text: 'hello test, my name is slice '
-    character: {fileID: 11400000, guid: b3fba7ed10b118244963a4c7df2a2ca7, type: 2}
-  - text: 'how re you slice '
-    character: {fileID: 11400000, guid: 5cdb433d0cfca4545be07504d554c252, type: 2}
-  - text: Cause im doing gooooooood
+  - text: :(
     character: {fileID: 11400000, guid: 5cdb433d0cfca4545be07504d554c252, type: 2}
   backgroundSprite: {fileID: 21300000, guid: cf20d409d706c574e9b1547ba3da13e3, type: 3}
-  nextScene: {fileID: 11400000, guid: e0d69c17df0fa214994badb8dd04de7c, type: 2}
+  nextScene: {fileID: 11400000, guid: dc5fe65c219e5c048a5ae2d334d8a45b, type: 2}
