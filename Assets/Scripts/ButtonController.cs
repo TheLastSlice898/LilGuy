@@ -8,8 +8,6 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public NextScene scene;
-    public string buttonOption; 
     public TextMeshProUGUI textMeshPro;
 
     void Start()
@@ -26,7 +24,7 @@ public class ButtonController : MonoBehaviour
 
     public void loadScene()
     {
-        SceneManager.LoadScene("VN_Scene 1");
+        SceneManager.LoadScene("VN_Scene");
     }
 
 }
