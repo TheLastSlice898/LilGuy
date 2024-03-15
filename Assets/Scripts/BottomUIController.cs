@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Runtime.CompilerServices;
 using System.Net.Mail;
+using Unity.VisualScripting;
 
 public class BottomUIController : MonoBehaviour
 {
@@ -12,16 +13,17 @@ public class BottomUIController : MonoBehaviour
     public TextMeshProUGUI characterNameText;
 
     private int sentenceIndex = -1; 
-    private Scene currentScene;
+    private NextScene currentScene;
     private State state = State.Completed;
     public float waitBetweenChar;
+    public GameObject Button;
 
     private enum State
     {
         Playing, Completed
     }
 
-    public void PlayScene(Scene scene)
+    public void PlayScene(NextScene scene)
     {
         currentScene = scene;
         sentenceIndex = -1;
@@ -38,6 +40,7 @@ public class BottomUIController : MonoBehaviour
     public bool IsCompleted()
     {
         return state == State.Completed;
+
     }
 
     public bool IsLastSentence()
@@ -65,4 +68,8 @@ public class BottomUIController : MonoBehaviour
         }
     } 
     
+    public void ButtonTime()
+    {
+        Button.SetActive(false);
+    }
 }

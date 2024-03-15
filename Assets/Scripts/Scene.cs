@@ -4,11 +4,11 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewScene", menuName = "Data/Scene")]
 [System.Serializable]
-public class Scene : ScriptableObject
+public class NextScene : ScriptableObject
 {
     public List<Sentence> sentences;
     public Sprite backgroundSprite;
-    public Scene nextScene;
+    public NextScene nextScene;
 
     [System.Serializable]
     public struct Sentence
