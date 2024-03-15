@@ -408,7 +408,7 @@ MonoBehaviour:
   lines:
   - 'Hello World '
   - This is test no 2
-  speed: 10
+  speed: 0.05
 --- !u!1 &595626566
 GameObject:
   m_ObjectHideFlags: 0

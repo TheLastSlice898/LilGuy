@@ -11,9 +11,7 @@ public class DialogueManager : MonoBehaviour
     public float speed;
 
     private int index;
-    
-
-   
+  
     void Start()
     {
        textDialogue.text = string.Empty;
@@ -23,7 +21,22 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown("space"))
+         {
+            if(textDialogue.text == lines[index]) 
+            { 
+                NextLine();
+            
+            }
+            else 
+            {
+            
+                StopAllCoroutines();
+                textDialogue.text = lines[index];
+
+            }
         
+        }
     }
 
     public void StartDialogue()
@@ -43,5 +56,21 @@ public class DialogueManager : MonoBehaviour
             textDialogue.text += c; 
             yield return new WaitForSeconds(speed);
         }
+    }
+
+    void NextLine()
+    {
+        if (index < lines.Length - 1)
+        {
+            index++;
+            textDialogue.text = string.Empty;
+            StartCoroutine(Sentence());
+
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+
     }
 }
