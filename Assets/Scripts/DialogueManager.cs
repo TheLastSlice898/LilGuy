@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI textDialogue;
     public string[] lines;
     public float speed;
+    public GameObject choices; 
 
     private int index;
   
@@ -33,6 +34,7 @@ public class DialogueManager : MonoBehaviour
             
                 StopAllCoroutines();
                 textDialogue.text = lines[index];
+                
 
             }
         
@@ -70,7 +72,11 @@ public class DialogueManager : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+
+            //Enable Choice Button UI
+            choices.SetActive(true);
         }
 
     }
 }
+
