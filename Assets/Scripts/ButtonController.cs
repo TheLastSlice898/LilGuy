@@ -24,13 +24,26 @@ public class ButtonController : MonoBehaviour
 
     public void StartGame()
     {
+        //This will eventually become the side scroller 
         SceneManager.LoadScene("VN_Scene 1");
     }
+
+    public void Options()
+    {
+        //This is just calling the options menu, we dont need the scene change funtion to include this 
+        SceneManager.LoadScene("Options");
+    }
+
+    public void BackToMain()
+    {
+        //I feel like this is pretty self explaining, but, this lets players out of options back to the main menu
+        SceneManager.LoadScene("Main Menu");
+    }
+
     public void SceneChange(int levelId)
     {
 
         //Looks at what level is called and also adds the level id in the build
-
         string levelName = "Choice " + levelId;
         SceneManager.LoadScene(levelName);
     }
