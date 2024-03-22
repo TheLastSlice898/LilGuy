@@ -71,7 +71,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+           
 
             //Enable Choice Button UI
             choices.SetActive(true);
