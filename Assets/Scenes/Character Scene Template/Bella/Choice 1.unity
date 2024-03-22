@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 165539321}
   - component: {fileID: 165539320}
   - component: {fileID: 165539319}
-  - component: {fileID: 165539323}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -229,35 +228,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &165539323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165539318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed506ffba2ac23844bebaf3c83bd3099, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDialogue: {fileID: 595626568}
-  lines:
-  - 'You approach the counter and look to find an employee who looks incredibly grumpy '
-  - 'Before opening your mouth to say hello, the grumpy barista cuts you off abruptly '
-  - 'Grumpy Barista:  Hello and welcome to the cafe, where we dont just serve coffee,
-    we also serve smiles'
-  - As she says this, she moves her arm up and makes a thumbs up whilst rolling her
-    eyes.
-  - 'Grumpy Barista: What can I get you?'
-  - She says staring into your soul with lifeless eyes.
-  - 'You: Well hello to you too, ermm'
-  - you pause as you try and look for her name badge. Once again she rolls her eyes
-    and huffs begrudgingly responding
-  - 'Grumpy Barista: Zoe'
-  - 'Grumpy Barista: Zoe'
-  speed: 0.03
-  choices: {fileID: 1280134409}
 --- !u!1 &317718413
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +262,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -205, y: -122}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317718415
@@ -378,7 +348,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 444.09106, y: 0, z: 0, w: 265.64362}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -428,7 +398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 57}
+  m_AnchoredPosition: {x: 0, y: 46}
   m_SizeDelta: {x: 1620, y: 133.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &477236232
@@ -444,7 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7921569}
+  m_Color: {r: 0.9056604, g: 0.9056604, b: 0.58526164, a: 0.7921569}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -475,9 +445,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 477236230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3db4d07f0ede544c86db819a5193bf7, type: 3}
+  m_Script: {fileID: 11500000, guid: ed506ffba2ac23844bebaf3c83bd3099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textDialogue: {fileID: 595626568}
+  lines:
+  - 'You approach the counter and look to find an employee who looks incredibly grumpy.
+    Before opening your mouth to say hello, the grumpy barista cuts you off abruptly. '
+  - "Grumpy Barista: Hello and welcome to the cafe, where we don't just serve coffee,
+    we also serve smiles\u2026."
+  - As she says this, she moves her arm up and makes a thumbs up whilst rolling her
+    eyes.
+  - 'Grumpy Barista: What can I get you?'
+  - 'She says staring into your soul with lifeless eyes. '
+  - 'You: Well hello to you too, ermm'
+  - 'You pause as you try and look for her name badge. Once again she rolls her eyes
+    and huffs begrudgingly responding '
+  - 'Grumpy Barista: Zoe    '
+  - 'As you look at the chalkboard behind her, scanning the menu, overwhelmed at
+    all the choices, you decide to fall back on your old reliable '
+  - 'You:  Almond Chai please, extra hot'
+  - 'You exclaim with a grin. She walks over to the coffee machine and starts on
+    your order.      '
+  - 'You: So Zoe...'
+  - 'You: How has your day been?'
+  - You ask, trying to make the situation feel less awkward
+  speed: 0.03
+  choices: {fileID: 1280134409}
 --- !u!1 &591607496
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,8 +506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.299988, y: -96}
-  m_SizeDelta: {x: 1107.2794, y: 1369.3813}
+  m_AnchoredPosition: {x: 16.299988, y: 36}
+  m_SizeDelta: {x: 500, y: 680}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591607498
 MonoBehaviour:
@@ -535,7 +529,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c978a70d9ad618347a8293dd520806c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60b652a06a2ff4d4fba914e5b2e3e3d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -612,8 +606,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Text Here
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
+  m_sharedMaterial: {fileID: -225222169392583622, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -637,8 +631,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -719,10 +713,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 165539322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000000041444, y: -0.0000076585}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &648317530
 MonoBehaviour:
@@ -744,7 +738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cf20d409d706c574e9b1547ba3da13e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39a64c8e04704904187455da45756370, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -799,8 +793,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.7095, y: -44}
-  m_SizeDelta: {x: 695.606, y: 83.22}
+  m_AnchoredPosition: {x: 444, y: 1}
+  m_SizeDelta: {x: 695.606, y: 351.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &798804339
 MonoBehaviour:
@@ -891,8 +885,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4dc2d8a673d73924f8811e06fed61948, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -946,8 +940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.7095, y: 48}
-  m_SizeDelta: {x: 695.606, y: 83.22}
+  m_AnchoredPosition: {x: -442, y: 1}
+  m_SizeDelta: {x: 695.606, y: 351.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879545822
 MonoBehaviour:
@@ -981,7 +975,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1038,8 +1032,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4dc2d8a673d73924f8811e06fed61948, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1155,7 +1149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.47843137, b: 0.6476893, a: 0.64705884}
+  m_Color: {r: 0.8160377, g: 0.99593884, b: 1, a: 0.64705884}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1195,8 +1189,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 429}
-  m_SizeDelta: {x: 1720, y: 200}
+  m_AnchoredPosition: {x: 0, y: 258.6637}
+  m_SizeDelta: {x: 1720, y: 370.3363}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &1723471309
 GameObject:
@@ -1418,7 +1412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -209, y: -130}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122387560
@@ -1504,7 +1498,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 435.97974, y: 0, z: -2.02771, w: 275.78265}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
