@@ -22,11 +22,10 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("space") && !GameManager.instance._pauseMenu)//bella is a wirnkle brain
+        if(Input.GetKeyDown("space"))
          {
             if(textDialogue.text == lines[index]) 
             { 
-                
                 NextLine();
             
             }
@@ -53,13 +52,11 @@ public class DialogueManager : MonoBehaviour
     {
         //This lets us type out each line at time 
 
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray()) 
         {
 
-            textDialogue.text += c;
+            textDialogue.text += c; 
             yield return new WaitForSeconds(speed);
-
-
         }
     }
 
