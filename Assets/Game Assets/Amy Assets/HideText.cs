@@ -18,13 +18,13 @@ public class HideText : MonoBehaviour
         yield return new WaitForSeconds(5); // Wait for delay to end to change text
         showText.text = "Press W or D to move, and Space to Jump"; 
 
-        yield return new WaitForSeconds(15); // Wait for delay to end to change text
+        yield return new WaitForSeconds(15); 
         showText.text = "You have mastered movement!"; 
 
-        yield return new WaitForSeconds(20); // Wait for delay to end to change text
+        yield return new WaitForSeconds(20); 
         showText.text = "A slime creature waits for you somewhere in the forest"; 
 
-        yield return new WaitForSeconds(27); // Wait for delay to end to change text
+        yield return new WaitForSeconds(27); 
         showText.text = " ";
     }
 }
