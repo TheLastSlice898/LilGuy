@@ -8,11 +8,11 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public TextMeshProUGUI textMeshPro;
+    
 
     void Start()
     {
-        textMeshPro = GetComponent<TextMeshProUGUI>();
+
         
 
     }
@@ -26,6 +26,8 @@ public class ButtonController : MonoBehaviour
     {
         //This will eventually become the side scroller 
         SceneManager.LoadScene("VN_Scene 1");
+        //GameManager.instance.AudioSource.clip = insert new clip here for each type of scene. 
+        GameManager.instance.AudioSource.Play();
     }
 
     public void Options()
@@ -37,7 +39,8 @@ public class ButtonController : MonoBehaviour
     public void BackToMain()
     {
         //I feel like this is pretty self explaining, but, this lets players out of options back to the main menu
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("MainMenu");
+        GameManager.instance._pauseMenu= false;
     }
 
     public void SceneChange(int levelId)
@@ -46,12 +49,18 @@ public class ButtonController : MonoBehaviour
         //Looks at what level is called and also adds the level id in the build
         string levelName = "Choice " + levelId;
         SceneManager.LoadScene(levelName);
+        
+        //GameManager.instance.AudioSource.clip = insert new clip here for each type of scene. 
     }
 
     public void Quit()
     {
         Debug.Log("Bye for now :3");
         Application.Quit();
+    }
+    public void UnloadOptionsSync()
+    {
+        SceneManager.UnloadSceneAsync("OptionsAsync");
     }
 }
 

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68dde69c88d900e4192d761d10661bf2, type: 3}
+  m_Name: SceneHolder
+  m_EditorClassIdentifier: 
+  MenuNames:
+  - Intro
+  - MainMenu
+  - Options
+  - OptionsAsync
+  sceneNames:
+  - Choice 1
+  - Choice 2
+  - VN_Scene 1
+  MenuAssets:
+  - {fileID: 102900000, guid: f3a90ae4449cd62418c92c23bca967a2, type: 3}
+  - {fileID: 102900000, guid: b577b44e74176824abe5b158079b7a87, type: 3}
+  - {fileID: 102900000, guid: a6bfb157fa5c14e45a5f0bc566c2b605, type: 3}
+  - {fileID: 102900000, guid: 9c91d1e8a91fff343bb993489760072c, type: 3}
+  sceneAssets:
+  - {fileID: 102900000, guid: a4b2f1bc51e32084881b3c6179e4e40f, type: 3}
+  - {fileID: 102900000, guid: 6e4d58d686a200f468592144d9f0acfe, type: 3}
+  - {fileID: 102900000, guid: 6e408ab5a9c26244193fc7cd0f51bc1b, type: 3}
