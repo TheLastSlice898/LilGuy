@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -33,10 +34,10 @@ public class PlayerMovement : MonoBehaviour
         jumping = true;
         cube.velocity = new Vector2(cube.velocity.x, power);
 
-        // waits for amount of seconds in delay variable
+        // waits for amount of seconds 
         yield return new WaitForSeconds(delay);
 
-        // set jump flag to false after the delay
+        // set jump to false after the delay
         jumping = false;
     }
 }
