@@ -22,7 +22,10 @@ public class HideText : MonoBehaviour
         showText.text = "You have mastered movement!"; 
 
         yield return new WaitForSeconds(20); // Wait for delay to end to change text
-        showText.text = "A special little creature waits for you somewhere in the forest"; 
+        showText.text = "A slime creature waits for you somewhere in the forest"; 
+
+        yield return new WaitForSeconds(27); // Wait for delay to end to change text
+        showText.text = " ";
     }
 }
 
