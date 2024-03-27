@@ -1,20 +1,26 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CafeEnter : MonoBehaviour
 {
-    public GameObject active;  
-    public GameObject inactive;  
+    public GameObject Active;  
+    public GameObject Inactive;  
+    public string NewestLevel;
 
    void Start()
     {
-         inactive.SetActive(false);  
+         Inactive.SetActive(false);  
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            active.SetActive(true);  
+            Active.SetActive(true);  
+            Button loadButton = GameObject.Find("EnterCafe").GetComponent<Button>();
+             loadButton.onClick.AddListener(OpenLevel);
+
 
         }
     }
@@ -23,8 +29,13 @@ public class CafeEnter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            active.SetActive(false);  
+            Active.SetActive(false);  
 
         }
+    }
+
+    void OpenLevel()
+    {
+        SceneManager.LoadScene(NewestLevel);  
     }
 }

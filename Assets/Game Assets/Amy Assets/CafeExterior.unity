@@ -1059,8 +1059,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439e79f800eb0c74cb97bc5b39c4711a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: {fileID: 1941948178}
-  inactive: {fileID: 1941948178}
+  Active: {fileID: 1941948178}
+  Inactive: {fileID: 1941948178}
+  NewestLevel: CafeInterior
 --- !u!61 &402876775
 BoxCollider2D:
   m_ObjectHideFlags: 0
