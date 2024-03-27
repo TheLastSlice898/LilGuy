@@ -19,7 +19,6 @@ MonoBehaviour:
   - OptionsAsync
   sceneNames:
   - Choice 1
-  - Choice 2
   - VN_Scene 1
   MenuAssets:
   - {fileID: 102900000, guid: f3a90ae4449cd62418c92c23bca967a2, type: 3}
@@ -27,5 +26,7 @@ MonoBehaviour:
   - {fileID: 102900000, guid: a6bfb157fa5c14e45a5f0bc566c2b605, type: 3}
   - {fileID: 102900000, guid: 9c91d1e8a91fff343bb993489760072c, type: 3}
   sceneAssets:
-  - {fileID: 102900000, guid: 6e4d58d686a200f468592144d9f0acfe, type: 3}
   - {fileID: 102900000, guid: 6e408ab5a9c26244193fc7cd0f51bc1b, type: 3}
+  - {fileID: 102900000, guid: 6e4d58d686a200f468592144d9f0acfe, type: 3}
+  - {fileID: 102900000, guid: 7614bb4ebac45c840b217a83e894bac5, type: 3}
+  - {fileID: 102900000, guid: 9da3020cf7dcd3d47b04c3bae25b5c0d, type: 3}

@@ -380,8 +380,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: -383}
-  m_SizeDelta: {x: 2193.6787, y: 987.47}
+  m_AnchoredPosition: {x: -5, y: -527.1053}
+  m_SizeDelta: {x: 2193.6787, y: 1275.6804}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178628617
 MonoBehaviour:
@@ -406,23 +406,35 @@ MonoBehaviour:
   - 'Grumpy Barista: What can I get you?'
   - She says staring into your soul with lifeless eyes.
   - 'You: Well hello to you too, ermm'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
-  - 'You: No Issues Mr Maxwell'
+  - you pause as you try and look for her name badge. Once again she rolls her eyes
+    and huffs begrudgingly respondin
+  - You pause as you try and look for her name badge. Once again she rolls her eyes
+    and huffs begrudgingly responding
+  - 'Grumpy Barista: Zoe'
+  - As you look at the chalkboard behind her, scanning the menu, overwhelmed at all
+    the choices, you decide to fall back on your old reliable
+  - 'You:  Almond Chai please, extra hot'
+  - You exclaim with a grin. She walks over to the coffee machine and starts on your
+    order.
+  - 'You: So Zoe...'
+  - 'You: How has your day been?'
+  - You ask, trying to make the situation feel less awkward
+  - 'Zoe: You are the first customer to ask me how MY day has been, she grins'
+  - "Zoe: and since you have given me the easiest order today, you my fury little
+    friend will get to hear my woes\u201D "
+  - "You smile back at her, finally getting her to crack open slightly. \u201CGo
+    on..\u201D you take a slight bow. She nodds back. You smile back at her, finally
+    getting her to crack open slightly. \u201CGo on..\u201D you take a slight bow.
+    She nodds back. "
+  - "Zoe: So currently I am working on this photography piece that is supposed to
+    represent colours in motion, I feel like it\u2019s terrible and that I am just
+    photographing just because I can and not contributing to anything meaningful"
+  - "She hands you your drink and you take a sip. This is the best drink you\u2019ve
+    had in a while you think looking up at here, actively listening"
+  - "Zoe: I also really love my job here and the customers but its the same issue,
+    I feel like I\u2019m just not great at anything, I love photography and want
+    to pursue it professionally"
+  - 'Zoe: What should I do ?'
   speed: 0.03
   choices: {fileID: 1933192136}
 --- !u!114 &178628618
