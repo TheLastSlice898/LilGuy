@@ -221,7 +221,6 @@ RectTransform:
   - {fileID: 648317529}
   - {fileID: 591607497}
   - {fileID: 477236231}
-  - {fileID: 1280134412}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -424,12 +423,18 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 595626567}
+  - {fileID: 1280134412}
   m_Father: {fileID: 165539322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
+<<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
   m_AnchoredPosition: {x: 0, y: 57}
   m_SizeDelta: {x: 1620, y: 133.5}
+=======
+  m_AnchoredPosition: {x: 35, y: -372}
+  m_SizeDelta: {x: 2043.3777, y: 1026.6084}
+>>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &477236232
 MonoBehaviour:
@@ -451,7 +456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8370840849505d0498ede2652f616194, type: 3}
+  m_Texture: {fileID: 2800000, guid: 1020fd7157e5a54448da83345c32ddd0, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -478,6 +483,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3db4d07f0ede544c86db819a5193bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
+=======
+  textDialogue: {fileID: 595626568}
+  lines:
+  - 'You approach the counter and look to find an employee who looks incredibly grumpy.
+    Before opening your mouth to say hello, the grumpy barista cuts you off abruptly. '
+  - "Grumpy Barista: Hello and welcome to the cafe, where we don't just serve coffee,
+    we also serve smiles\u2026."
+  - As she says this, she moves her arm up and makes a thumbs up whilst rolling her
+    eyes.
+  - 'Grumpy Barista: What can I get you?'
+  - 'She says staring into your soul with lifeless eyes. '
+  - 'You: Well hello to you too, ermm'
+  - 'You pause as you try and look for her name badge. Once again she rolls her eyes
+    and huffs begrudgingly responding '
+  - 'Grumpy Barista: Zoe    '
+  - 'As you look at the chalkboard behind her, scanning the menu, overwhelmed at
+    all the choices, you decide to fall back on your old reliable '
+  - 'You:  Almond Chai please, extra hot'
+  - 'You exclaim with a grin. She walks over to the coffee machine and starts on
+    your order.      '
+  - 'You: So Zoe...'
+  - 'You: How has your day been?'
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  - You ask, trying to make the situation feel less awkward
+  speed: 0.03
+  choices: {fileID: 1280134409}
+>>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
 --- !u!1 &591607496
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,8 +629,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 12, y: 26}
-  m_SizeDelta: {x: 122.79, y: 50}
+  m_AnchoredPosition: {x: 239, y: 457}
+  m_SizeDelta: {x: 1591.7693, y: 200.1579}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &595626568
 MonoBehaviour:
@@ -637,13 +679,18 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
+<<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
   m_fontSize: 25
   m_fontSizeBase: 25
+=======
+  m_fontSize: 72
+  m_fontSizeBase: 40
+>>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -673,7 +720,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -46.4747, z: -1463.0469, w: -26.255432}
+  m_margin: {x: 0, y: -0.16389465, z: -1.4775696, w: -0.321373}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -814,7 +861,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be5a5139a0db7e41a488c35f01b6847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
 --- !u!114 &798804340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,7 +1007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be5a5139a0db7e41a488c35f01b6847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 0}
 --- !u!114 &879545823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,19 +1229,24 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280134409}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 879545821}
   - {fileID: 798804338}
-  m_Father: {fileID: 165539322}
+  m_Father: {fileID: 477236231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
+<<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
   m_AnchoredPosition: {x: 0, y: 429}
   m_SizeDelta: {x: 1720, y: 200}
+=======
+  m_AnchoredPosition: {x: 0, y: 212.6637}
+  m_SizeDelta: {x: 1720, y: 370.3363}
+>>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &1723471309
 GameObject:
