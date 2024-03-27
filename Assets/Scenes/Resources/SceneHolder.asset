@@ -19,8 +19,9 @@ MonoBehaviour:
   - OptionsAsync
   sceneNames:
   - Choice 1
-  - Choice 2
   - VN_Scene 1
+  - Benchmark (Floating Text)
+  - 25 - Sunny Days Example
   MenuAssets:
   - {fileID: 102900000, guid: f3a90ae4449cd62418c92c23bca967a2, type: 3}
   - {fileID: 102900000, guid: b577b44e74176824abe5b158079b7a87, type: 3}
@@ -29,3 +30,5 @@ MonoBehaviour:
   sceneAssets:
   - {fileID: 102900000, guid: 6e4d58d686a200f468592144d9f0acfe, type: 3}
   - {fileID: 102900000, guid: 6e408ab5a9c26244193fc7cd0f51bc1b, type: 3}
+  - {fileID: 102900000, guid: 16177da2e3254cee91944756d5f8ddd3, type: 3}
+  - {fileID: 102900000, guid: f9b4c22e15cff344ba9fc6542a58dd07, type: 3}
