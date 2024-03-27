@@ -15,7 +15,9 @@ namespace Slice
         public List<string> MenuNames;
 
         public List<string> sceneNames;
+
 #if UNITY_EDITOR // makes sure that these editor variables and functions are not in the build
+
         public SceneAsset[] MenuAssets;
 
         public SceneAsset[] sceneAssets;
