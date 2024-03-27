@@ -303,8 +303,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 928.7462, y: 829.1384}
+  m_AnchoredPosition: {x: -312, y: -20}
+  m_SizeDelta: {x: 630.7, y: 829.1384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &164590826
 MonoBehaviour:
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e5ba17c52b88ebe46bc9267368d37a4a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60b652a06a2ff4d4fba914e5b2e3e3d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -380,8 +380,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -370.99997}
-  m_SizeDelta: {x: 1720, y: 200}
+  m_AnchoredPosition: {x: -5, y: -383}
+  m_SizeDelta: {x: 2193.6787, y: 987.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178628617
 MonoBehaviour:
@@ -397,9 +397,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDialogue: {fileID: 1801028141}
   lines:
-  - 'Maxwell: You have found me traveller '
-  - 'Maxwell: Please have some rest '
-  - 'Maxwell: Thank you for being kind to my son '
+  - You approach the counter and look to find an employee who looks incredibly grumpy
+  - 'Before opening your mouth to say hello, the grumpy barista cuts you off abruptly '
+  - 'Grumpy Barista:  Hello and welcome to the cafe, where we dont just serve coffee,
+    we also serve smiles'
+  - As she says this, she moves her arm up and makes a thumbs up whilst rolling her
+    eyes.
+  - 'Grumpy Barista: What can I get you?'
+  - She says staring into your soul with lifeless eyes.
+  - 'You: Well hello to you too, ermm'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
+  - 'You: No Issues Mr Maxwell'
   - 'You: No Issues Mr Maxwell'
   speed: 0.03
   choices: {fileID: 1933192136}
@@ -423,7 +445,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8370840849505d0498ede2652f616194, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1020fd7157e5a54448da83345c32ddd0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -778,7 +800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 077b8296ea0dbe946bb7090cc7eb769f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39a64c8e04704904187455da45756370, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1336,8 +1358,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -473, y: 47}
-  m_SizeDelta: {x: 726.9596, y: 67.6494}
+  m_AnchoredPosition: {x: 6.6640015, y: 31.6097}
+  m_SizeDelta: {x: 1686.2875, y: 236.9426}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1801028141
 MonoBehaviour:
@@ -1361,15 +1383,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Dialogue Here '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
+  m_sharedMaterial: {fileID: -225222169392583622, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1392,7 +1414,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
