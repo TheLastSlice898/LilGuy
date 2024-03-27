@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game Assets/Amy Assets/ForestScene.unity
     guid: 6b7cbc990bb0d3247bc22cfad2424d97
+  - enabled: 1
+    path: Assets/Game Assets/Amy Assets/Adopt.unity
+    guid: 16514fd1974cbe144809dc101edb86e1
   m_configObjects: {}
