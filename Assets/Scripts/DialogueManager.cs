@@ -22,15 +22,9 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        if(Input.GetKeyDown("space"))
-=======
+
         if(Input.GetKeyDown("space") && !GameManager.instance._pauseMenu)   //bella is a wirnkle brain
->>>>>>> Stashed changes
-=======
-        if(Input.GetKeyDown("space") && !GameManager.instance._pauseMenu)   //bella is a wirnkle brain
->>>>>>> Stashed changes
+
          {
             if(textDialogue.text == lines[index]) 
             { 
