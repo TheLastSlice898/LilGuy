@@ -429,8 +429,13 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
 <<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
+<<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
   m_AnchoredPosition: {x: 0, y: 57}
   m_SizeDelta: {x: 1620, y: 133.5}
+=======
+  m_AnchoredPosition: {x: 35, y: -372}
+  m_SizeDelta: {x: 2043.3777, y: 1026.6084}
+>>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
 =======
   m_AnchoredPosition: {x: 35, y: -372}
   m_SizeDelta: {x: 2043.3777, y: 1026.6084}
@@ -680,9 +685,12 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
 <<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
+<<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
   m_fontSize: 25
   m_fontSizeBase: 25
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
   m_fontSize: 72
   m_fontSizeBase: 40
 >>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
@@ -1241,9 +1249,12 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
 <<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
+<<<<<<< Updated upstream:Assets/Scenes/Character Scene Template/Choice 1.unity
   m_AnchoredPosition: {x: 0, y: 429}
   m_SizeDelta: {x: 1720, y: 200}
 =======
+=======
+>>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
   m_AnchoredPosition: {x: 0, y: 212.6637}
   m_SizeDelta: {x: 1720, y: 370.3363}
 >>>>>>> Stashed changes:Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
