@@ -8,24 +8,15 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    
-
-    void Start()
+    public void SaveTheGameLOL()
     {
-
-        
-
-    }
-
-    void Update()
-    {
-        
+        GameManager.instance.SaveScene();
     }
 
     public void StartGame()
     {
         //This will eventually become the side scroller 
-        SceneManager.LoadScene("VN_Scene 1");
+        SceneManager.LoadScene("SaveSlot");
         //GameManager.instance.AudioSource.clip = insert new clip here for each type of scene. 
         GameManager.instance.AudioSource.Play();
     }
@@ -43,12 +34,12 @@ public class ButtonController : MonoBehaviour
         GameManager.instance._pauseMenu= false;
     }
 
-    public void SceneChange(int levelId)
+    public void SceneChange(string scene)
     {
 
         //Looks at what level is called and also adds the level id in the build
-        string levelName = "Choice " + levelId;
-        SceneManager.LoadScene(levelName);
+        
+        SceneManager.LoadScene(scene);
         
         //GameManager.instance.AudioSource.clip = insert new clip here for each type of scene. 
     }

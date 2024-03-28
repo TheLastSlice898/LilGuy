@@ -157,9 +157,9 @@ RectTransform:
   - {fileID: 475070121}
   m_Father: {fileID: 1917668923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 174.22235, y: -455.31375}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &55815361
@@ -291,9 +291,9 @@ RectTransform:
   - {fileID: 681356835}
   m_Father: {fileID: 1917668923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 174.22235, y: -274.10495}
   m_SizeDelta: {x: 288.2549, y: 78.5289}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60484596
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 269978635}
   - component: {fileID: 269978634}
   m_Layer: 5
-  m_Name: 'Start '
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -514,7 +514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -640, y: -167}
+  m_AnchoredPosition: {x: -640, y: -161.95001}
   m_SizeDelta: {x: 603.4, y: 364.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269978634
@@ -1487,7 +1487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &875474852
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1699,9 +1699,9 @@ RectTransform:
   - {fileID: 557385709}
   m_Father: {fileID: 1917668923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 174.22235, y: -376.84155}
   m_SizeDelta: {x: 288.2549, y: 78.5289}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &984053228
@@ -1751,6 +1751,18 @@ MonoBehaviour:
       - m_Target: {fileID: 984053231}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: BackToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 984053231}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: SaveTheGameLOL
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1894,8 +1906,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2138,11 +2150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5311e87dbbb2ce64388b96a037effdbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneData:
-    Character: Bella
-    scenecount: 2
-  _characterData:
-    evil: 1
+  _saveSlotObject: {fileID: 0}
 --- !u!1 &1237013535
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,8 +2556,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2914,9 +2922,9 @@ RectTransform:
   - {fileID: 1786087947}
   m_Father: {fileID: 1917668923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 174.22235, y: -171.36832}
   m_SizeDelta: {x: 288.2549, y: 78.5289}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803336333
@@ -3070,7 +3078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
   m_sharedMaterial: {fileID: -225222169392583622, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
@@ -3097,8 +3105,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

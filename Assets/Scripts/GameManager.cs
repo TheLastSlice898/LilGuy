@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,11 +10,14 @@ public class GameManager : MonoBehaviour
 {
     public Slice.SceneHolder SceneHolder;
     public AudioSource AudioSource;
+    
     [SerializeField] private string DebugSceneName;
     [SerializeField] private GameObject _pauseMenuOBJ;
     [SerializeField] private GameObject _pauseMenuUI;
     public bool _pauseMenu = false;
     public bool _InMenu = false;
+
+    
 
     private static GameManager _instance;
     public static GameManager instance { get { return _instance; } }
@@ -65,6 +69,14 @@ public class GameManager : MonoBehaviour
 
 
     }
+    public void SaveScene()
+    {
+        string _currentSceneName = SceneManager.GetActiveScene().name;
+        if (GetComponent<SaveData>()._saveSlotObject != null)
+        {
+            GetComponent<SaveData>()._saveSlotObject.UnityScenestring = _currentSceneName;
+        }
+    }
     public void TogglePause()
     {
         _pauseMenu = !_pauseMenu;
@@ -83,7 +95,12 @@ public class GameManager : MonoBehaviour
     private void OnLevelWasLoaded()
     {
         string _currentSceneName = SceneManager.GetActiveScene().name;
+        if (GetComponent<SaveData>()._saveSlotObject != null)
+        {
+            GetComponent<SaveData>()._saveSlotObject.UnityScenestring = _currentSceneName;
+        }
         
+
 
 #if UNITY_EDITOR
         for (int i = 0; i < SceneHolder.MenuAssets.Length; i++)
