@@ -9,6 +9,10 @@ public class PetFollow : MonoBehaviour
     public float speed = 5.0f;  
     private bool following = false;
     private Vector2 start;
+    public GameObject objectActive;    // object to set active, object to set inactive
+    public GameObject objectActive2;  
+    public GameObject objectInactive;
+    public GameObject objectInactive2;
 
     void Start()
     {
@@ -28,6 +32,10 @@ public class PetFollow : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             following = true;
+             objectActive.SetActive(true);
+             objectActive2.SetActive(true);
+             objectInactive.SetActive(false);
+             objectInactive2.SetActive(false);
         }
     }
 

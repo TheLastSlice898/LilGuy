@@ -19,10 +19,10 @@ public class HideText : MonoBehaviour
         showText.text = "Press W or D to move, and Space to Jump"; 
 
         yield return new WaitForSeconds(15); 
-        showText.text = "You have mastered movement!"; 
+        showText.text = "You have learnt movement!"; 
 
         yield return new WaitForSeconds(20); 
-        showText.text = "A slime creature waits for you somewhere in the forest"; 
+        showText.text = "Did you find the slime creature that waits for you in the forest?"; 
 
         yield return new WaitForSeconds(27); 
         showText.text = " ";
