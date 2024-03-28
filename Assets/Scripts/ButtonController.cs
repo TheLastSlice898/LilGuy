@@ -25,7 +25,7 @@ public class ButtonController : MonoBehaviour
     public void StartGame()
     {
         //This will eventually become the side scroller 
-        SceneManager.LoadScene("VN_Scene 1");
+        SceneManager.LoadScene("ForestScene");
         //GameManager.instance.AudioSource.clip = insert new clip here for each type of scene. 
         GameManager.instance.AudioSource.Play();
     }
