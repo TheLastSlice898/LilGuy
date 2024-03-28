@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Resources/UI Scenes/OptionsAsync.unity
     guid: 9c91d1e8a91fff343bb993489760072c
   - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Bella/VN_Scene 1.unity
+    guid: 6e408ab5a9c26244193fc7cd0f51bc1b
+  - enabled: 1
     path: Assets/Scenes/Character Scene Template/Bella/Choice 1.unity
     guid: 6e4d58d686a200f468592144d9f0acfe
   - enabled: 1
@@ -27,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Character Scene Template/Bella/Choice 3.unity
     guid: 9da3020cf7dcd3d47b04c3bae25b5c0d
   - enabled: 1
-    path: Assets/Scenes/Character Scene Template/Bella/VN_Scene 1.unity
-    guid: 6e408ab5a9c26244193fc7cd0f51bc1b
+    path: Assets/Scenes/Credits.unity
+    guid: 8077c2708c6b5a140836a19e45af6d2a
   m_configObjects: {}

@@ -420,10 +420,8 @@ MonoBehaviour:
   - 'Zoe: You are the first customer to ask me how MY day has been, she grins'
   - "Zoe: and since you have given me the easiest order today, you my fury little
     friend will get to hear my woes\u201D "
-  - "You smile back at her, finally getting her to crack open slightly. \u201CGo
-    on..\u201D you take a slight bow. She nodds back. You smile back at her, finally
-    getting her to crack open slightly. \u201CGo on..\u201D you take a slight bow.
-    She nodds back. "
+  - 'You smile back at her, finally getting her to crack open slightly.  '
+  - 'You: Go on..'
   - "Zoe: So currently I am working on this photography piece that is supposed to
     represent colours in motion, I feel like it\u2019s terrible and that I am just
     photographing just because I can and not contributing to anything meaningful"
@@ -564,7 +562,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
