@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour
     public string[] lines;
     public float speed;
     public GameObject choices;
-    public GameObject credits; 
+   
 
     private int index;
   
@@ -82,11 +82,6 @@ public class DialogueManager : MonoBehaviour
             choices.SetActive(true);
         }
 
-    }
-
-    void EndScene()
-    {
-        SceneManager.LoadScene("Credits");
     }
 }
 

@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Character Scene Template/Bella/Bella Bad Choice 2.unity
     guid: 9da3020cf7dcd3d47b04c3bae25b5c0d
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: 8077c2708c6b5a140836a19e45af6d2a
+    path: Assets/Scenes/Character Scene Template/Bella/Bella Bad Choice 3.unity
+    guid: 4dd138947603b874d9899f63c0460322
   m_configObjects: {}
