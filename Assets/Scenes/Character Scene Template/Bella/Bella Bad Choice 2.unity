@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 1034071250}
   - component: {fileID: 1034071253}
   - component: {fileID: 1034071252}
-  - component: {fileID: 1034071251}
+  - component: {fileID: 1034071254}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -648,27 +648,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: -403}
   m_SizeDelta: {x: 2193.6787, y: 844.4119}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1034071251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034071249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f6e19bd774eccf4887540c2b4b7c2c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDialogueEnd: {fileID: 164175401}
-  finalLines:
-  - "You decide it\u2019s best just to walk away, after all, you\u2019re not a therapist
-    and she is just a minimum-wage worker."
-  - "I\u2019m sure she will b-\u201D"
-  - While you ponder this you hear even more sporadic wailing, to the point where
-    other customers in the cafe are beginning to look at you.
-  - Your face burns hot with embarrassment, you stop before the exit
-  speeds: 0.03
 --- !u!114 &1034071252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,6 +686,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034071249}
   m_CullTransparentMesh: 1
+--- !u!114 &1034071254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034071249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed506ffba2ac23844bebaf3c83bd3099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDialogue: {fileID: 164175401}
+  lines:
+  - "You decide it\u2019s best just to walk away, after all, you\u2019re not a therapist
+    and she is just a minimum-wage worker."
+  - "I\u2019m sure she will b-\u201D"
+  - While you ponder this you hear even more sporadic wailing, to the point where
+    other customers in the cafe are beginning to look at you.
+  - Your face burns hot with embarrassment, you stop before the exit
+  speed: 0.03
+  choices: {fileID: 1640758116}
 --- !u!1 &1140782115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,13 +1033,13 @@ MonoBehaviour:
       - m_Target: {fileID: 1696571121}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: SceneChange
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Bella Bad Choice 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1519327926

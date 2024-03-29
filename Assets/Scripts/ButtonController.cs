@@ -43,12 +43,12 @@ public class ButtonController : MonoBehaviour
         GameManager.instance._pauseMenu= false;
     }
 
-    public void SceneChange(int levelId)
+    public void SceneChange(string scene)
     {
 
         //Looks at what level is called and also adds the level id in the build
-        string levelName = "Choice " + levelId;
-        SceneManager.LoadScene(levelName);
+       
+        SceneManager.LoadScene(scene);
         
         //GameManager.instance.AudioSource.clip = insert new clip here for each type of scene. 
     }
