@@ -18,19 +18,43 @@ MonoBehaviour:
   - Options
   - OptionsAsync
   - SaveSlot
+  - Credits
   sceneNames:
-  - Choice 1
   - VN_Scene 1
-  - Benchmark (Floating Text)
-  - 25 - Sunny Days Example
+  - Bella Opening
+  - Bella Good Choice 1
+  - Bella Good Choice 2
+  - Bella Good Ending
+  - Bella Bad Choice 1
+  - Bella Bad Choice 2
+  - Bella Bad Ending
+  - Choice 11
+  - Choice 22
+  - Choice 33
+  - ForestScene
+  - CafeInterior
+  - CafeExterior
+  - Adopt
   MenuAssets:
   - {fileID: 102900000, guid: f3a90ae4449cd62418c92c23bca967a2, type: 3}
   - {fileID: 102900000, guid: b577b44e74176824abe5b158079b7a87, type: 3}
   - {fileID: 102900000, guid: a6bfb157fa5c14e45a5f0bc566c2b605, type: 3}
   - {fileID: 102900000, guid: 9c91d1e8a91fff343bb993489760072c, type: 3}
   - {fileID: 102900000, guid: 83137d6277e6a434fae8196ae14a7849, type: 3}
+  - {fileID: 102900000, guid: 8077c2708c6b5a140836a19e45af6d2a, type: 3}
   sceneAssets:
   - {fileID: 102900000, guid: 6e408ab5a9c26244193fc7cd0f51bc1b, type: 3}
-  - {fileID: 102900000, guid: 6e4d58d686a200f468592144d9f0acfe, type: 3}
+  - {fileID: 102900000, guid: 594b1415b96191649856231e3299274b, type: 3}
+  - {fileID: 102900000, guid: 2e3f0c2a09e3712479331fc7e712caf5, type: 3}
+  - {fileID: 102900000, guid: ba6142d9e0d26ae4ea9c73f260fe75ed, type: 3}
+  - {fileID: 102900000, guid: 4dc936da9931058498683a54d24ee014, type: 3}
   - {fileID: 102900000, guid: 7614bb4ebac45c840b217a83e894bac5, type: 3}
   - {fileID: 102900000, guid: 9da3020cf7dcd3d47b04c3bae25b5c0d, type: 3}
+  - {fileID: 102900000, guid: 4dd138947603b874d9899f63c0460322, type: 3}
+  - {fileID: 102900000, guid: 91029391c671b6d44bce1e9158246327, type: 3}
+  - {fileID: 102900000, guid: 0e64057e63f65804591bd7a39523e527, type: 3}
+  - {fileID: 102900000, guid: d32124082dcaa344bbeca98cf7a583e7, type: 3}
+  - {fileID: 102900000, guid: 6b7cbc990bb0d3247bc22cfad2424d97, type: 3}
+  - {fileID: 102900000, guid: 9e5fb04b9a6515f4181e6fd0f3f73993, type: 3}
+  - {fileID: 102900000, guid: 061c62c95ac59024e944752a82ab9b01, type: 3}
+  - {fileID: 102900000, guid: 4b325ed132fdf9641bfb80f69b14cdcc, type: 3}

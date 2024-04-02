@@ -18,17 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Resources/UI Scenes/OptionsAsync.unity
     guid: 9c91d1e8a91fff343bb993489760072c
   - enabled: 1
-    path: Assets/Game Assets/Amy Assets/ForestScene.unity
-    guid: 6b7cbc990bb0d3247bc22cfad2424d97
+    path: Assets/Scenes/Resources/UI Scenes/SaveSlot.unity
+    guid: 83137d6277e6a434fae8196ae14a7849
   - enabled: 1
-    path: Assets/Game Assets/Amy Assets/Adopt.unity
-    guid: 4b325ed132fdf9641bfb80f69b14cdcc
+    path: Assets/Scenes/Credits.unity
+    guid: 8077c2708c6b5a140836a19e45af6d2a
   - enabled: 1
-    path: Assets/Game Assets/Amy Assets/CafeExterior.unity
-    guid: 061c62c95ac59024e944752a82ab9b01
-  - enabled: 1
-    path: Assets/Game Assets/Amy Assets/CafeInterior.unity
-    guid: 9e5fb04b9a6515f4181e6fd0f3f73993
+    path: Assets/Scenes/Character Scene Template/Bella/VN_Scene 1.unity
+    guid: 6e408ab5a9c26244193fc7cd0f51bc1b
   - enabled: 1
     path: Assets/Scenes/Character Scene Template/Bella/Bella Opening.unity
     guid: 594b1415b96191649856231e3299274b
@@ -50,4 +47,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Character Scene Template/Bella/Bad/Bella Bad Ending.unity
     guid: 4dd138947603b874d9899f63c0460322
+  - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Roxee/Choice 11.unity
+    guid: 91029391c671b6d44bce1e9158246327
+  - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Roxee/Choice 22.unity
+    guid: 0e64057e63f65804591bd7a39523e527
+  - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Roxee/Choice 33.unity
+    guid: d32124082dcaa344bbeca98cf7a583e7
+  - enabled: 1
+    path: Assets/Game Assets/Amy Assets/ForestScene.unity
+    guid: 6b7cbc990bb0d3247bc22cfad2424d97
+  - enabled: 1
+    path: Assets/Game Assets/Amy Assets/CafeInterior.unity
+    guid: 9e5fb04b9a6515f4181e6fd0f3f73993
+  - enabled: 1
+    path: Assets/Game Assets/Amy Assets/CafeExterior.unity
+    guid: 061c62c95ac59024e944752a82ab9b01
+  - enabled: 1
+    path: Assets/Game Assets/Amy Assets/Adopt.unity
+    guid: 4b325ed132fdf9641bfb80f69b14cdcc
   m_configObjects: {}

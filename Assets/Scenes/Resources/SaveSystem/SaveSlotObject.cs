@@ -13,7 +13,7 @@ public class SaveSlotObject : ScriptableObject
     public Scene scene;
     //public Sprite SceneTex;
     public string SceneName;
-    public string UnityScenestring = "VN_Scene 1";
+    public string UnityScenestring = "ForestScene";
 
     
 
