@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Game Assets/Amy Assets/butterfly-ezgif_com-gif-to-sprite-converter_0.controller.meta
 guid: 5e8b1a32be9a2c945bb8f787ee5c71e0
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
+========
+guid: 88f2b80642135634d9b315e08aa14238
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+>>>>>>>> SAVE:Assets/Scenes/Resources/SaveSystem/SaveData0.asset.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

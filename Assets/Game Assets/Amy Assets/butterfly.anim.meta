@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Game Assets/Amy Assets/butterfly.anim.meta
 guid: c08eadb2202d6d54b9710efe872d8cac
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000
+========
+guid: 16f36fc32357c3045ba85423a2b99af7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+>>>>>>>> SAVE:Assets/Game Assets/UI/Buttons/UI_Additive.mat.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
