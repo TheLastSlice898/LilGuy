@@ -1128,6 +1128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slotObject: {fileID: 0}
   _isSaveDataValid: 0
+  SaveSlots: {fileID: 0}
   ActiveSlot: {fileID: 7311250528446490479}
   EmptySlot: {fileID: 3877620073196665739}
 --- !u!1 &7226542348310284769

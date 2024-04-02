@@ -6,7 +6,7 @@ public class SaveSlotData : MonoBehaviour
 {
      public GameObject Character;
      public GameObject Scene;
-
+     
     // Update is called once per frame
     void Update()
     {

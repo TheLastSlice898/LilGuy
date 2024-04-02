@@ -1,15 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
+using System.IO;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
+using UnityEditor;
 
 public class SaveSlotSystem : MonoBehaviour
 {
+    private IDataService dataService = new SaveData();
     public SaveSlotObject _slotObject;
     public bool _isSaveDataValid;
     [SerializeField] private GameObject SaveSlots;
@@ -17,27 +17,36 @@ public class SaveSlotSystem : MonoBehaviour
     [SerializeField] private GameObject EmptySlot;
     private void Awake()
     {
-        SaveSlots = gameObject.transform.parent.gameObject;
-        foreach (var SaveSlot in SaveSlots.GetComponentsInChildren<SaveSlotSystem>())
+        
         {
-#if UNITY_EDITOR
-            if (Resources.Load($"SaveSystem/SaveSlot {SaveSlot.name}") != null)
-            {
-                var CurrentSaveData = (SaveSlotObject)Resources.Load($"SaveSystem/SaveSlot {SaveSlot.name}");
-                Debug.Log(CurrentSaveData); 
-                SaveSlot._slotObject = CurrentSaveData;
-            }
-#endif
-            if (System.IO.File.Exists(Application.persistentDataPath + $"/SaveSlot {SaveSlot.name}.Json"))
-            {
-                Debug.LogWarning(Application.persistentDataPath + $"/SaveSlot {SaveSlot.name}.Json");
-                string SaveJSON = System.IO.File.ReadAllText(Application.persistentDataPath + $"/SaveSlot {SaveSlot.name}.Json");
-                Debug.Log(SaveJSON);
-                Debug.Log(SaveSlot._slotObject);
+            string path = Application.persistentDataPath + "/SaveData" + gameObject.name+".json";
+            
 
-                JsonUtility.FromJsonOverwrite(SaveJSON, SaveSlot._slotObject);
+            if (File.Exists(path))
+            {
+                
+                SaveSlotObject _tempdata = ScriptableObject.CreateInstance<SaveSlotObject>();
+                int slot = int.Parse(gameObject.name);
+                _tempdata = dataService.LoadData<SaveSlotObject>("/SaveData", slot, false);
+                _slotObject = _tempdata;
+#if UNITY_EDITOR
+                AssetDatabase.CreateAsset(_tempdata, $"Assets/Scenes/Resources/SaveSystem/SaveData{slot}.asset");
+                AssetDatabase.Refresh();
+#endif
+                GameManager.instance.SaveSlotObject = _slotObject;
+                GameManager.instance.CurrentSaveSlot = (GameManager.SaveSlot)slot;
+
+            }
+            else
+            {
+               
                 
             }
+
+
+
+
+
         }
 
     }
@@ -49,8 +58,8 @@ public class SaveSlotSystem : MonoBehaviour
             ActiveSlot.SetActive(true);
             EmptySlot.SetActive(false);
 
-            ActiveSlot.GetComponent<SaveSlotData>().Scene.GetComponentInChildren<Image>().sprite = _slotObject.SceneTex;
-            ActiveSlot.GetComponent<SaveSlotData>().Character.GetComponentInChildren<Image>().sprite = _slotObject.CharacterTex;
+            //ActiveSlot.GetComponent<SaveSlotData>().Scene.GetComponentInChildren<Image>().sprite = _slotObject.SceneTex;
+            //ActiveSlot.GetComponent<SaveSlotData>().Character.GetComponentInChildren<Image>().sprite = _slotObject.CharacterTex;
 
             ActiveSlot.GetComponent<SaveSlotData>().Scene.GetComponent<TextMeshProUGUI>().text = $"Scene : {_slotObject.SceneName}";
             ActiveSlot.GetComponent<SaveSlotData>().Character.GetComponent<TextMeshProUGUI>().text = $"Character : {_slotObject.CharacterName}";
@@ -68,11 +77,14 @@ public class SaveSlotSystem : MonoBehaviour
         SceneManager.LoadScene(_slotObject.UnityScenestring);
 
     }
-    public void CreateNewSave()
+    public void CreateNewSave(int SaveSlot)
     {
-        GameManager.instance.GetComponent<SaveData>().CreateSaveDataObject(gameObject.name.ToString());
-        _slotObject = GameManager.instance.GetComponent<SaveData>()._saveSlotObject;
-        SceneManager.LoadScene( _slotObject.UnityScenestring);
+        SaveSlotObject _tempobject = ScriptableObject.CreateInstance<SaveSlotObject>();
+        _tempobject.name = SaveSlot.ToString();
+        GameManager.instance.SaveSlotObject = _tempobject;
+        GameManager.instance.CurrentSaveSlot = (GameManager.SaveSlot)SaveSlot;
+        GameManager.instance.SaveScene();
+        SceneManager.LoadScene(_tempobject.UnityScenestring);
     }
 }
 

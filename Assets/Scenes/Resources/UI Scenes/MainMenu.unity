@@ -206,9 +206,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1083925461}
-        m_TargetAssemblyTypeName: SaveData, Assembly-CSharp
-        m_MethodName: SaveIntoJSON
+      - m_Target: {fileID: 1083925459}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SaveScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2094,7 +2094,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1083925460}
   - component: {fileID: 1083925459}
-  - component: {fileID: 1083925461}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2116,11 +2115,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneHolder: {fileID: 11400000, guid: ead7c73e4fccaec40a54aaf99ec20ad2, type: 2}
   AudioSource: {fileID: 1030558558}
+  SaveSlotObject: {fileID: 0}
+  CurrentSaveSlot: 0
+  IsEncrypted: 0
   DebugSceneName: 
   _pauseMenuOBJ: {fileID: 875474851}
   _pauseMenuUI: {fileID: 130202985}
   _pauseMenu: 0
   _InMenu: 0
+  Savename: /SaveData
 --- !u!4 &1083925460
 Transform:
   m_ObjectHideFlags: 0
@@ -2138,19 +2141,6 @@ Transform:
   - {fileID: 1030558559}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1083925461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083925458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5311e87dbbb2ce64388b96a037effdbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _saveSlotObject: {fileID: 0}
 --- !u!1 &1237013535
 GameObject:
   m_ObjectHideFlags: 0

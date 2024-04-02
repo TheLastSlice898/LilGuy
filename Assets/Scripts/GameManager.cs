@@ -10,15 +10,19 @@ public class GameManager : MonoBehaviour
 {
     public Slice.SceneHolder SceneHolder;
     public AudioSource AudioSource;
-    
+    public SaveSlotObject SaveSlotObject;
+    public enum SaveSlot {SaveData0, SaveData1, SaveData2};
+    public SaveSlot CurrentSaveSlot;
+    private IDataService dataService = new SaveData();
+    [SerializeField] private bool IsEncrypted;
     [SerializeField] private string DebugSceneName;
     [SerializeField] private GameObject _pauseMenuOBJ;
     [SerializeField] private GameObject _pauseMenuUI;
     public bool _pauseMenu = false;
     public bool _InMenu = false;
+    [SerializeField] private string Savename;
 
     
-
     private static GameManager _instance;
     public static GameManager instance { get { return _instance; } }
 
@@ -40,6 +44,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         DebugSceneName = SceneManager.GetActiveScene().name;
+
 
         if (_InMenu)
         {
@@ -72,11 +77,22 @@ public class GameManager : MonoBehaviour
     public void SaveScene()
     {
         string _currentSceneName = SceneManager.GetActiveScene().name;
-        if (GetComponent<SaveData>()._saveSlotObject != null)
+        if (!_InMenu)
         {
-            GetComponent<SaveData>()._saveSlotObject.UnityScenestring = _currentSceneName;
+            SaveSlotObject.UnityScenestring = _currentSceneName;
+            if (dataService.SaveData(Savename, SaveSlotObject, (int)CurrentSaveSlot, IsEncrypted))
+            {
+
+            }
+            else
+            {
+                Debug.LogError("Could not save file");
+            }
         }
+
+        
     }
+
     public void TogglePause()
     {
         _pauseMenu = !_pauseMenu;
@@ -95,17 +111,14 @@ public class GameManager : MonoBehaviour
     private void OnLevelWasLoaded()
     {
         string _currentSceneName = SceneManager.GetActiveScene().name;
-        if (GetComponent<SaveData>()._saveSlotObject != null)
-        {
-            GetComponent<SaveData>()._saveSlotObject.UnityScenestring = _currentSceneName;
-        }
+        
         
 
 
 #if UNITY_EDITOR
         for (int i = 0; i < SceneHolder.MenuAssets.Length; i++)
         {
-            Debug.Log(_currentSceneName);
+            
             if (_currentSceneName == SceneHolder.MenuAssets[i].name)
             {
                 _InMenu = true;
