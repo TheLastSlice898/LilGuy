@@ -68,4 +68,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game Assets/Amy Assets/Adopt.unity
     guid: 4b325ed132fdf9641bfb80f69b14cdcc
+  - enabled: 0
+    path: Assets/Scenes/Character Scene Template/Amy/Null.unity
+    guid: b3e91e4b9efb2224ba74100d2795488c
+  - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Amy/Amy Choice 1.unity
+    guid: 45728e7010010054193674cbcf108e99
+  - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Amy/Amy Choice 2.unity
+    guid: 09155f0745d453e458ee7cd9af3acdd2
   m_configObjects: {}
