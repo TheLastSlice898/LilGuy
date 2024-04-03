@@ -86,5 +86,17 @@ public class SaveSlotSystem : MonoBehaviour
         GameManager.instance.SaveScene();
         SceneManager.LoadScene(_tempobject.UnityScenestring);
     }
+    public void DeleteSave()
+    {
+
+        string path = Application.persistentDataPath + "/SaveData" + gameObject.name + ".json";
+
+
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+            _slotObject = null;
+        }
+    }
 }
 
