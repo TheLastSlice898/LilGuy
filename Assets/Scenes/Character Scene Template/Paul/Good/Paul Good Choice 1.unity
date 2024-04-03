@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -150,14 +150,14 @@ RectTransform:
   m_GameObject: {fileID: 166524931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.1928, y: 3.1928, z: 3.1928}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1826695294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030518}
+  m_AnchoredPosition: {x: 308, y: 572}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &166524933
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 39a64c8e04704904187455da45756370, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a58c2e7378f278247bee2e33bfbbbcbe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -225,14 +225,14 @@ RectTransform:
   m_GameObject: {fileID: 456153158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1.1108, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1826695294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312, y: -20}
+  m_AnchoredPosition: {x: -271, y: -20}
   m_SizeDelta: {x: 630.7, y: 829.1384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456153160
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 60b652a06a2ff4d4fba914e5b2e3e3d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f63c0e878500f34469e0a13441323489, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Walk Away
+  m_text: Be Polite and move along
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
   m_sharedMaterial: {fileID: -225222169392583622, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 41.308655, y: 0, z: 53.397583, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue to listen
+  m_text: Keep on asking
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
   m_sharedMaterial: {fileID: -225222169392583622, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
@@ -700,7 +700,7 @@ GameObject:
   - component: {fileID: 986255381}
   - component: {fileID: 986255380}
   m_Layer: 5
-  m_Name: Choice 2
+  m_Name: Good
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -791,7 +791,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: Bella Good Ending
+          m_StringArgument: Paul Good Choice 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &986255382
@@ -1072,7 +1072,7 @@ GameObject:
   - component: {fileID: 1177025525}
   - component: {fileID: 1177025524}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Bad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1163,7 +1163,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: Bella Bad Choice 2
+          m_StringArgument: Paul Bad Choice Ending I No Name
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1177025526
@@ -1351,16 +1351,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDialogue: {fileID: 1142899226}
   lines:
-  - Her eyes light up
-  - 'Zoe: You really think so?'
-  - She says hesitantly
-  - 'You: Well, do you want to do photography?'
-  - You ask, a hint of force in your voice
-  - She looks at you with a contempt face.
-  - 'Zoe: I really do, it''s something I have done since I was in high school, My
-    mum was obsessed with it and taught me everything I know'
-  - 'Zoe: I think she would want me to continue'
-  - She starts getting teary and looks to you for consolidation
+  - You ask the fox in a more softer voice
+  - 'You : You normally stay around this spot.'
+  - 'Fox : Yea. It helps me to forget, Its very cosy and lets me be alone with my
+    thoughts.'
+  - "You : Forget\u2026.What?"
+  - "Fox : I know I shouldn't talk about my woes to a total stranger but\u2026..Here
+    is where Hawk went wrong\u2026"
+  - "Hawk : I was in a 2 year long relationship and for the last month and a half
+    been trying to get over it and this little stop helps keep my problems away and
+    been doing wonders hehe\u2026"
+  - 'Hawk : But what Can I say. Havin a little down time helps to calm the storm
+    inside'
+  - "Hawk : But enough chit chat\u2026.I shouldn't talk about this more, Just leave
+    me alone"
   speed: 0.03
   choices: {fileID: 916753758}
 --- !u!114 &1647429532
