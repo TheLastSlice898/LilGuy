@@ -16,7 +16,7 @@ public class HideText : MonoBehaviour
     private IEnumerator ChangeText()
     {
         yield return new WaitForSeconds(5); // Wait for delay to end to change text
-        showText.text = "Press W or D to move, and Space to Jump"; 
+        showText.text = "Press A or D to move, and Space to Jump"; 
 
         yield return new WaitForSeconds(15); 
         showText.text = "You have learnt movement!"; 
