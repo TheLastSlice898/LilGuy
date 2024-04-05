@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D cube;
 
+    public GameObject PlayerModel;
     void Start()
     {
         cube = GetComponent<Rigidbody2D>();
@@ -19,13 +20,24 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Move left and right
-        float moveDirection = Input.GetAxis("Horizontal"); 
+        float moveDirection = Input.GetAxis("Horizontal");
         cube.velocity = new Vector2(moveDirection * speed, cube.velocity.y);
-
+        Debug.Log(cube.velocity.magnitude);
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && !jumping)
         {
             StartCoroutine(JumpWithDelay());
+        }
+
+        if (moveDirection >= 0)
+        {
+            PlayerModel.transform.rotation = Quaternion.Euler(new Vector3(0, 0));
+
+        }
+        else
+        {
+            PlayerModel.transform.rotation = Quaternion.Euler(new Vector3(0, 180));
+
         }
     }
 
