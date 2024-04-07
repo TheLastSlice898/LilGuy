@@ -55,6 +55,11 @@ public class ButtonController : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync("OptionsAsync");
     }
+
+    public void BackToCafe()
+    {
+        SceneManager.LoadScene("CafeInterior");
+    }
 }
 
 
