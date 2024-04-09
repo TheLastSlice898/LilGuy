@@ -40,9 +40,9 @@ public class ButtonController : MonoBehaviour
         //Looks at what level is called and also adds the level id in the build
        
         SceneManager.LoadScene(scene);
-        
-        SceneManager.LoadScene(scene);
-        
+
+        GameManager.instance.SaveScene();
+
         //GameManager.instance.AudioSource.clip = insert new clip here for each type of scene. 
     }
 

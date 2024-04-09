@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a469e00ab685cc04db8b743258b4af9c, type: 3}
   m_Name: SaveData1
   m_EditorClassIdentifier: 
-  characters: 0
-  CharacterName: 
+  character: 0
   scene: 0
-  SceneName: 
-  UnityScenestring: ForestScene
+  FinishedHawk: 0
+  FinishedChai: 0
+  FinishedFreya: 0
+  FinishedZoey: 0
+  UnityScenestring: Amy Choice 1

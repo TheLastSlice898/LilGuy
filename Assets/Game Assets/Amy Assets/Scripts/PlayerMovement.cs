@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         // Move left and right
         float moveDirection = Input.GetAxis("Horizontal");
         cube.velocity = new Vector2(moveDirection * speed, cube.velocity.y);
-        Debug.Log(cube.velocity.magnitude);
+        
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && !jumping)
         {
