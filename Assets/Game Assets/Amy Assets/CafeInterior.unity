@@ -549,7 +549,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 382227841}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: SaveTheGameLOL
+        m_MethodName: ToggleSaveBool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1808,7 +1808,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 382227840}
+      - m_Target: {fileID: 1236832621}
         m_TargetAssemblyTypeName: ChangeMangerEnum, Assembly-CSharp
         m_MethodName: ChangeEnums
         m_Mode: 1
@@ -1821,12 +1821,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1236832622}
-        m_TargetAssemblyTypeName: ChangeMangerEnum, Assembly-CSharp
-        m_MethodName: SaveTheGameLOL
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: ToggleSaveBool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1883,7 +1883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedCharacter: 3
-  SelectedScene: 0
+  SelectedScene: 2
 --- !u!114 &1236832622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2531,7 +2531,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 382227840}
+      - m_Target: {fileID: 1464075923}
         m_TargetAssemblyTypeName: ChangeMangerEnum, Assembly-CSharp
         m_MethodName: ChangeEnums
         m_Mode: 1
@@ -2545,7 +2545,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1464075924}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: SaveTheGameLOL
+        m_MethodName: ToggleSaveBool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2606,7 +2606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedCharacter: 4
-  SelectedScene: 0
+  SelectedScene: 2
 --- !u!114 &1464075924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3718,7 +3718,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 382227840}
+      - m_Target: {fileID: 2011232936}
         m_TargetAssemblyTypeName: ChangeMangerEnum, Assembly-CSharp
         m_MethodName: ChangeEnums
         m_Mode: 1
@@ -3732,7 +3732,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2011232937}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: SaveTheGameLOL
+        m_MethodName: ToggleSaveBool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

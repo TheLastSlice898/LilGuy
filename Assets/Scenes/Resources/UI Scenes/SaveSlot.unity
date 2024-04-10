@@ -503,7 +503,7 @@ PrefabInstance:
     - target: {fileID: 8083631366791826001, guid: 935ffb7f5da3ddd49a5db731528b5072, type: 3}
       propertyPath: _slotObject
       value: 
-      objectReference: {fileID: 11400000, guid: 7f8cf627db8cc1b4a9e974cf643cd496, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8355444842743097323, guid: 935ffb7f5da3ddd49a5db731528b5072, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1466,6 +1466,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9106744473691109832, guid: 935ffb7f5da3ddd49a5db731528b5072, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1662,6 +1666,10 @@ PrefabInstance:
     - target: {fileID: 8380715598896815453, guid: 935ffb7f5da3ddd49a5db731528b5072, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106744473691109832, guid: 935ffb7f5da3ddd49a5db731528b5072, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

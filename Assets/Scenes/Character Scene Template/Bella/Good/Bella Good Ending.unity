@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -673,6 +673,8 @@ GameObject:
   - component: {fileID: 1647429533}
   - component: {fileID: 1647429532}
   - component: {fileID: 1647429534}
+  - component: {fileID: 1647429536}
+  - component: {fileID: 1647429535}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -769,6 +771,58 @@ MonoBehaviour:
   - As you go to leave, you can't help but feel a burst of warmth fly over you, you
     did a good thing today
   speeds: 0.03
+  MyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1647429535}
+        m_TargetAssemblyTypeName: AchivementSystem, Assembly-CSharp
+        m_MethodName: UnlockSticker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1647429536}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: ToggleSaveBool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1647429535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647429529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c73bc74e96f8f4c803e67a342c51e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: 4
+--- !u!114 &1647429536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647429529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be5a5139a0db7e41a488c35f01b6847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1826695289
 GameObject:
   m_ObjectHideFlags: 0

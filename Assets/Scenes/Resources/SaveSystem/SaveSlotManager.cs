@@ -29,12 +29,7 @@ public class SaveSlotSystem : MonoBehaviour
                 int slot = int.Parse(gameObject.name);
                 _tempdata = dataService.LoadData<SaveSlotObject>("/SaveData", slot, false);
                 _slotObject = _tempdata;
-#if UNITY_EDITOR
-                AssetDatabase.CreateAsset(_tempdata, $"Assets/Scenes/Resources/SaveSystem/SaveData{slot}.asset");
-                AssetDatabase.Refresh();
-#endif
-                GameManager.instance.SaveSlotObject = _slotObject;
-                GameManager.instance.CurrentSaveSlot = (GameManager.SaveSlot)slot;
+                
 
             }
             CheckSaveData();
@@ -105,9 +100,10 @@ public class SaveSlotSystem : MonoBehaviour
         }
     }
 
-    public void LoadSaveScece()
+    public void LoadSaveScece(int slot)
     {
-
+        GameManager.instance.SaveSlotObject = _slotObject;
+        GameManager.instance.CurrentSaveSlot = (GameManager.SaveSlot)slot;
         SceneManager.LoadScene(_slotObject.UnityScenestring);
 
     }
@@ -117,8 +113,8 @@ public class SaveSlotSystem : MonoBehaviour
         _tempobject.name = SaveSlot.ToString();
         GameManager.instance.SaveSlotObject = _tempobject;
         GameManager.instance.CurrentSaveSlot = (GameManager.SaveSlot)SaveSlot;
-        GameManager.instance.SaveScene();
         SceneManager.LoadScene(_tempobject.UnityScenestring);
+        
     }
     public void DeleteSave()
     {
