@@ -112,4 +112,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Character Scene Template/Roxee/Good/Roxee Good Choice 2.unity
     guid: 3573048b7e7c07b409473b114544d943
+  - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Amy/AmyBadEnding.unity
+    guid: ed18d76f2ece1eb499c75dcae9129364
+  - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Amy/Amy Choice 3.unity
+    guid: d3ae7ef1e88964c4b8e098710a173b48
+  - enabled: 1
+    path: Assets/Scenes/Character Scene Template/Amy/AmyGoodEnding.unity
+    guid: 61a62d4ef650ebd4999680cd2b563716
   m_configObjects: {}
