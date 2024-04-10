@@ -5,14 +5,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SaveData", menuName = "System/Save/CreateSave", order = 1)]
 public class SaveSlotObject : ScriptableObject
 {
-    public enum Character { Wolf, Fox, Sergal }
-    public Character characters;
+    public enum Character { None, Chai, Hawk, Freya, Zoey }
+    public Character character;
     //public Sprite CharacterTex;
-    public string CharacterName;
-    public enum Scene { Cafe, Forrest }
+    public enum Scene { Forest, CafeEXT, CafeINT, CafeBACK }
     public Scene scene;
     //public Sprite SceneTex;
-    public string SceneName;
+   
+    public bool FinishedHawk;
+    public bool FinishedChai;
+    public bool FinishedFreya;
+    public bool FinishedZoey;
     public string UnityScenestring = "ForestScene";
 
     

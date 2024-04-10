@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public Slice.SceneHolder SceneHolder;
+    public Animator UI_Animator;
     public AudioSource AudioSource;
     public SaveSlotObject SaveSlotObject;
     public enum SaveSlot {SaveData0, SaveData1, SaveData2};
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
             _pauseMenuOBJ.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             _pauseMenu = !_pauseMenu;
         }
@@ -77,6 +78,7 @@ public class GameManager : MonoBehaviour
     public void SaveScene()
     {
         string _currentSceneName = SceneManager.GetActiveScene().name;
+        UI_Animator.SetTrigger("Save");
         if (!_InMenu)
         {
             SaveSlotObject.UnityScenestring = _currentSceneName;

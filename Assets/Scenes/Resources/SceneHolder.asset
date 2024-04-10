@@ -20,7 +20,6 @@ MonoBehaviour:
   - SaveSlot
   - Credits
   sceneNames:
-  - VN_Scene 1
   - Bella Opening
   - Bella Good Choice 1
   - Bella Good Choice 2
@@ -28,13 +27,28 @@ MonoBehaviour:
   - Bella Bad Choice 1
   - Bella Bad Choice 2
   - Bella Bad Ending
-  - Choice 11
-  - Choice 22
-  - Choice 33
+  - Amy Choice 1
+  - Amy Choice 2
   - ForestScene
   - CafeInterior
   - CafeExterior
   - Adopt
+  - Paul Opening
+  - Paul Good Choice 1
+  - Paul Good Choice 2
+  - Paul Good Choice Ending
+  - Paul Bad Choice Ending I No Name
+  - Paul Bad Choice Ending I With Name
+  - Roxee Opening
+  - Roxee Good Ending 2
+  - Roxee Good Ending 1
+  - Roxee Good Choice 2
+  - Roxee Good Choice 1
+  - Roxee Bad Ending 2
+  - Roxee Bad Ending 1
+  - Roxee Bad Ending
+  - Roxee Bad Choice 1
+  - Roxee Good Choice 2
   MenuAssets:
   - {fileID: 102900000, guid: f3a90ae4449cd62418c92c23bca967a2, type: 3}
   - {fileID: 102900000, guid: b577b44e74176824abe5b158079b7a87, type: 3}
@@ -43,7 +57,6 @@ MonoBehaviour:
   - {fileID: 102900000, guid: 83137d6277e6a434fae8196ae14a7849, type: 3}
   - {fileID: 102900000, guid: 8077c2708c6b5a140836a19e45af6d2a, type: 3}
   sceneAssets:
-  - {fileID: 102900000, guid: 6e408ab5a9c26244193fc7cd0f51bc1b, type: 3}
   - {fileID: 102900000, guid: 594b1415b96191649856231e3299274b, type: 3}
   - {fileID: 102900000, guid: 2e3f0c2a09e3712479331fc7e712caf5, type: 3}
   - {fileID: 102900000, guid: ba6142d9e0d26ae4ea9c73f260fe75ed, type: 3}
@@ -51,10 +64,25 @@ MonoBehaviour:
   - {fileID: 102900000, guid: 7614bb4ebac45c840b217a83e894bac5, type: 3}
   - {fileID: 102900000, guid: 9da3020cf7dcd3d47b04c3bae25b5c0d, type: 3}
   - {fileID: 102900000, guid: 4dd138947603b874d9899f63c0460322, type: 3}
-  - {fileID: 102900000, guid: 91029391c671b6d44bce1e9158246327, type: 3}
-  - {fileID: 102900000, guid: 0e64057e63f65804591bd7a39523e527, type: 3}
-  - {fileID: 102900000, guid: d32124082dcaa344bbeca98cf7a583e7, type: 3}
+  - {fileID: 102900000, guid: 45728e7010010054193674cbcf108e99, type: 3}
+  - {fileID: 102900000, guid: 09155f0745d453e458ee7cd9af3acdd2, type: 3}
   - {fileID: 102900000, guid: 6b7cbc990bb0d3247bc22cfad2424d97, type: 3}
   - {fileID: 102900000, guid: 9e5fb04b9a6515f4181e6fd0f3f73993, type: 3}
   - {fileID: 102900000, guid: 061c62c95ac59024e944752a82ab9b01, type: 3}
   - {fileID: 102900000, guid: 4b325ed132fdf9641bfb80f69b14cdcc, type: 3}
+  - {fileID: 102900000, guid: 6c30bfad133355b469d66bc881fe9387, type: 3}
+  - {fileID: 102900000, guid: 972f91a6c24538a49a2cb9cc2fe05e7a, type: 3}
+  - {fileID: 102900000, guid: d191c107fd73fc141a3054883cf3f988, type: 3}
+  - {fileID: 102900000, guid: 7a0acc10f185a4f40a11245d03a32fff, type: 3}
+  - {fileID: 102900000, guid: 697996877d771ba4bb2bae26781376f8, type: 3}
+  - {fileID: 102900000, guid: bf5d803f5a690d74c9086924568b18ac, type: 3}
+  - {fileID: 102900000, guid: a110aef350a943d41b9ffb5c2e9302fd, type: 3}
+  - {fileID: 102900000, guid: efdaa4db386edd34c8ed862fcd194d57, type: 3}
+  - {fileID: 102900000, guid: 9af8f2ac46c83634d9d92fc00f78f0bd, type: 3}
+  - {fileID: 102900000, guid: 3573048b7e7c07b409473b114544d943, type: 3}
+  - {fileID: 102900000, guid: ded43141f3bacdd46a39f4d6f00e8622, type: 3}
+  - {fileID: 102900000, guid: 74415deaf39fbfd438bdf8f772f30e02, type: 3}
+  - {fileID: 102900000, guid: 90cb247873749ce489a74e3afe185fc6, type: 3}
+  - {fileID: 102900000, guid: ef3ae437ba018ff40a7140b5af7b5a6a, type: 3}
+  - {fileID: 102900000, guid: 97c9b9531d73d764ea9a07d6cac7a5a5, type: 3}
+  - {fileID: 102900000, guid: 3573048b7e7c07b409473b114544d943, type: 3}

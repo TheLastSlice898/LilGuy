@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 39a64c8e04704904187455da45756370, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9dc933ab852bd44aad4558581b1ff9a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -232,8 +232,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312, y: -20}
-  m_SizeDelta: {x: 630.7, y: 829.1384}
+  m_AnchoredPosition: {x: -369, y: 52}
+  m_SizeDelta: {x: 520.6362, y: 701.8097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456153160
 MonoBehaviour:
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 60b652a06a2ff4d4fba914e5b2e3e3d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3a566c66730aad44bb4b05d0b1ed418b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -492,8 +492,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Dialogue Here '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
-  m_sharedMaterial: {fileID: -225222169392583622, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 96e01182818faa9479dd96cb93eeb4c6, type: 2}
+  m_sharedMaterial: {fileID: 7302318455370574088, guid: 96e01182818faa9479dd96cb93eeb4c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -517,13 +517,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6e19bd774eccf4887540c2b4b7c2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDialogueEnd: {fileID: 0}
+  textDialogueEnd: {fileID: 1142899226}
   finalLines:
   - You give her a slight smile and nod for her to continue
   - 'Zoe: I think this stemmed from a bad mark I had gotten from one of my professors.'
