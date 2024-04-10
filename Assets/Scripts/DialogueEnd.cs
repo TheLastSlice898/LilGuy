@@ -24,7 +24,7 @@ public class DialogueEnd : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("space") && !GameManager.instance._pauseMenu)   //bella is a wirnkle brain
+        if(Input.GetMouseButtonDown(0) && !GameManager.instance._pauseMenu)   //bella is a wirnkle brain
          {
             if(textDialogueEnd.text == finalLines[finalIndex]) 
             { 
