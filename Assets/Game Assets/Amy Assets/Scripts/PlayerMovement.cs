@@ -7,22 +7,31 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f; 
     public float power = 5f; 
     public float delay = 1f; //delay jump so player cant jump endlessly into the sky
-    private bool jumping = false; 
+    private bool jumping = false;
+    private bool move = false; 
 
     private Rigidbody2D cube;
+    
 
     public GameObject PlayerModel;
     void Start()
     {
         cube = GetComponent<Rigidbody2D>();
+      
+        
+
     }
 
     void Update()
     {
         // Move left and right
-        float moveDirection = Input.GetAxis("Horizontal");
-        cube.velocity = new Vector2(moveDirection * speed, cube.velocity.y);
-        Debug.Log(cube.velocity.magnitude);
+      
+          
+          float moveDirection = Input.GetAxis("Horizontal");
+            cube.velocity = new Vector2(moveDirection * speed, cube.velocity.y);
+            Debug.Log(cube.velocity.magnitude);
+       
+        
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && !jumping)
         {
