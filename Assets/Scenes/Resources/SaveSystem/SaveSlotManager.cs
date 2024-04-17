@@ -17,40 +17,27 @@ public class SaveSlotSystem : MonoBehaviour
     [SerializeField] private GameObject EmptySlot;
     private void Awake()
     {
-        
+
         {
-            string path = Application.persistentDataPath + "/SaveData" + gameObject.name+".json";
-            
+            string path = Application.persistentDataPath + "/SaveData" + gameObject.name + ".json";
+
 
             if (File.Exists(path))
             {
-                
+
                 SaveSlotObject _tempdata = ScriptableObject.CreateInstance<SaveSlotObject>();
                 int slot = int.Parse(gameObject.name);
                 _tempdata = dataService.LoadData<SaveSlotObject>("/SaveData", slot, false);
                 _slotObject = _tempdata;
-#if UNITY_EDITOR
-                AssetDatabase.CreateAsset(_tempdata, $"Assets/Scenes/Resources/SaveSystem/SaveData{slot}.asset");
-                AssetDatabase.Refresh();
-#endif
-                GameManager.instance.SaveSlotObject = _slotObject;
-                GameManager.instance.CurrentSaveSlot = (GameManager.SaveSlot)slot;
-
-            }
-            else
-            {
-               
                 
+
             }
-
-
-
-
+            CheckSaveData();
 
         }
 
     }
-    private void Update()
+    private void CheckSaveData()
     {
         _isSaveDataValid = !_slotObject.IsUnityNull();
         if (_isSaveDataValid)
@@ -58,11 +45,53 @@ public class SaveSlotSystem : MonoBehaviour
             ActiveSlot.SetActive(true);
             EmptySlot.SetActive(false);
 
-            //ActiveSlot.GetComponent<SaveSlotData>().Scene.GetComponentInChildren<Image>().sprite = _slotObject.SceneTex;
-            //ActiveSlot.GetComponent<SaveSlotData>().Character.GetComponentInChildren<Image>().sprite = _slotObject.CharacterTex;
+            //changes the character sprite and name
+            
+            Sprite CharacterSprite = Resources.Load<Sprite>($"Sprites/{_slotObject.character}");
+            ActiveSlot.GetComponent<SaveSlotData>().Character.GetComponentInChildren<Image>().sprite = CharacterSprite;
+            ActiveSlot.GetComponent<SaveSlotData>().Character.GetComponent<TextMeshProUGUI>().text = $"Character : {_slotObject.character}";
 
-            ActiveSlot.GetComponent<SaveSlotData>().Scene.GetComponent<TextMeshProUGUI>().text = $"Scene : {_slotObject.SceneName}";
-            ActiveSlot.GetComponent<SaveSlotData>().Character.GetComponent<TextMeshProUGUI>().text = $"Character : {_slotObject.CharacterName}";
+
+            //changes the scene sprite and name
+            Sprite SceneSprite = Resources.Load<Sprite>($"Sprites/{_slotObject.scene}");
+            ActiveSlot.GetComponent<SaveSlotData>().Scene.GetComponentInChildren<Image>().sprite = SceneSprite;
+            ActiveSlot.GetComponent<SaveSlotData>().Scene.GetComponent<TextMeshProUGUI>().text = $"Scene : {_slotObject.scene}";
+
+            foreach (sticker Achivements in ActiveSlot.GetComponent<SaveSlotData>().Achivemnets.GetComponentsInChildren<sticker>())
+            {
+                if (_slotObject.FinishedChai)
+                {
+                    if (Achivements.name == "FinishedChai")
+                    {
+                        Achivements.IsFinished = true;
+                    }
+                }
+                if (_slotObject.FinishedHawk)
+                {
+                    if (Achivements.name == "FinishedHawk")
+                    {
+                        Achivements.IsFinished = true;
+                    }
+                }
+                if (_slotObject.FinishedZoey)
+                {
+                    if (Achivements.name == "FinishedZoey")
+                    {
+                        Achivements.IsFinished = true;
+                    }
+                }
+                if (_slotObject.FinishedFreya)
+                {
+                    if (Achivements.name == "FinishedFreya")
+                    {
+                        Achivements.IsFinished = true;
+                    }
+                }
+
+            }
+            //get Character sprite and name
+
+
         }
         else
         {
@@ -71,9 +100,10 @@ public class SaveSlotSystem : MonoBehaviour
         }
     }
 
-    public void LoadSaveScece()
+    public void LoadSaveScece(int slot)
     {
-
+        GameManager.instance.SaveSlotObject = _slotObject;
+        GameManager.instance.CurrentSaveSlot = (GameManager.SaveSlot)slot;
         SceneManager.LoadScene(_slotObject.UnityScenestring);
 
     }
@@ -83,8 +113,8 @@ public class SaveSlotSystem : MonoBehaviour
         _tempobject.name = SaveSlot.ToString();
         GameManager.instance.SaveSlotObject = _tempobject;
         GameManager.instance.CurrentSaveSlot = (GameManager.SaveSlot)SaveSlot;
-        GameManager.instance.SaveScene();
         SceneManager.LoadScene(_tempobject.UnityScenestring);
+        
     }
     public void DeleteSave()
     {
@@ -97,6 +127,7 @@ public class SaveSlotSystem : MonoBehaviour
             File.Delete(path);
             _slotObject = null;
         }
+        CheckSaveData();
     }
 }
 

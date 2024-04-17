@@ -20,7 +20,6 @@ MonoBehaviour:
   - SaveSlot
   - Credits
   sceneNames:
-  - VN_Scene 1
   - Bella Opening
   - Bella Good Choice 1
   - Bella Good Choice 2
@@ -28,13 +27,28 @@ MonoBehaviour:
   - Bella Bad Choice 1
   - Bella Bad Choice 2
   - Bella Bad Ending
-  - Choice 11
-  - Choice 22
-  - Choice 33
+  - Amy Choice 1
+  - Amy Choice 2
   - ForestScene
   - CafeInterior
   - CafeExterior
   - Adopt
+  - Paul Opening
+  - Paul Good Choice 1
+  - Paul Good Choice 2
+  - Paul Good Choice Ending
+  - Paul Bad Choice Ending I No Name
+  - Paul Bad Choice Ending I With Name
+  - Roxee Opening
+  - Roxee Good Ending 2
+  - Roxee Good Ending 1
+  - Roxee Good Choice 2
+  - Roxee Good Choice 1
+  - Roxee Bad Ending 2
+  - Roxee Bad Ending 1
+  - Roxee Bad Ending
+  - Roxee Bad Choice 1
+  - Roxee Good Choice 2
   MenuAssets:
   - {fileID: 102900000, guid: f3a90ae4449cd62418c92c23bca967a2, type: 3}
   - {fileID: 102900000, guid: b577b44e74176824abe5b158079b7a87, type: 3}
@@ -52,7 +66,6 @@ MonoBehaviour:
   - {fileID: 102900000, guid: 4dd138947603b874d9899f63c0460322, type: 3}
   - {fileID: 102900000, guid: 45728e7010010054193674cbcf108e99, type: 3}
   - {fileID: 102900000, guid: 09155f0745d453e458ee7cd9af3acdd2, type: 3}
-  - {fileID: 102900000, guid: d32124082dcaa344bbeca98cf7a583e7, type: 3}
   - {fileID: 102900000, guid: 6b7cbc990bb0d3247bc22cfad2424d97, type: 3}
   - {fileID: 102900000, guid: 9e5fb04b9a6515f4181e6fd0f3f73993, type: 3}
   - {fileID: 102900000, guid: 061c62c95ac59024e944752a82ab9b01, type: 3}

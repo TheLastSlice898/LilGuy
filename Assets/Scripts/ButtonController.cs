@@ -8,9 +8,9 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public void SaveTheGameLOL()
+    public void SaveCurrent()
     {
-        GameManager.instance.SaveScene();
+        GameManager.instance.SaveCurrentScene();
     }
 
     public void StartGame()
@@ -31,21 +31,22 @@ public class ButtonController : MonoBehaviour
     {
         //I feel like this is pretty self explaining, but, this lets players out of options back to the main menu
         SceneManager.LoadScene("MainMenu");
-        GameManager.instance._pauseMenu= false;
+        GameManager.instance._pauseMenu = false;
     }
 
     public void SceneChange(string scene)
     {
 
         //Looks at what level is called and also adds the level id in the build
-       
+
         SceneManager.LoadScene(scene);
-        
-        SceneManager.LoadScene(scene);
-        
+
         //GameManager.instance.AudioSource.clip = insert new clip here for each type of scene. 
     }
-
+    public void ToggleSaveBool()
+    {
+        GameManager.instance.HasSavedGame = false;
+    }
     public void Quit()
     {
         Debug.Log("Bye for now :3");
@@ -60,6 +61,13 @@ public class ButtonController : MonoBehaviour
     {
         SceneManager.LoadScene("CafeInterior");
     }
+  
+
+
+
+
+
+
 }
 
 

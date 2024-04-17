@@ -4,13 +4,14 @@ using UnityEngine;
 using TMPro;
 using UnityEditor;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class DialogueEnd : MonoBehaviour
 {
     public TextMeshProUGUI textDialogueEnd;
     public string[] finalLines;
     public float speeds;
-    
+    [SerializeField] private UnityEvent MyEvent;
 
     private int finalIndex;
   
@@ -23,7 +24,7 @@ public class DialogueEnd : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("space") && !GameManager.instance._pauseMenu)   //bella is a wirnkle brain
+        if(Input.GetMouseButtonDown(0) && !GameManager.instance._pauseMenu)   //bella is a wirnkle brain
          {
             if(textDialogueEnd.text == finalLines[finalIndex]) 
             { 
@@ -75,6 +76,7 @@ public class DialogueEnd : MonoBehaviour
         }
         else
         {
+            MyEvent.Invoke();
             SceneManager.LoadScene("Credits");
             
         }

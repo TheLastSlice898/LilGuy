@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -9,19 +10,21 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public Slice.SceneHolder SceneHolder;
+    public Animator UI_Animator;
     public AudioSource AudioSource;
     public SaveSlotObject SaveSlotObject;
     public enum SaveSlot {SaveData0, SaveData1, SaveData2};
     public SaveSlot CurrentSaveSlot;
     private IDataService dataService = new SaveData();
     [SerializeField] private bool IsEncrypted;
-    [SerializeField] private string DebugSceneName;
+    [SerializeField] private string SceneCurrentName;
+    [SerializeField] private string SceneNextName;
     [SerializeField] private GameObject _pauseMenuOBJ;
     [SerializeField] private GameObject _pauseMenuUI;
     public bool _pauseMenu = false;
     public bool _InMenu = false;
     [SerializeField] private string Savename;
-
+    public bool HasSavedGame;
     
     private static GameManager _instance;
     public static GameManager instance { get { return _instance; } }
@@ -38,12 +41,35 @@ public class GameManager : MonoBehaviour
             _instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        SceneManager.sceneLoaded += SaveAfterScene;
+    }
+
+    private void SaveAfterScene(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        SceneCurrentName = scene.name;
+        
+        if (!HasSavedGame)
+        {
+            UI_Animator.SetTrigger("Save");
+            SaveSlotObject.UnityScenestring = SceneCurrentName;
+            if (dataService.SaveData(Savename, SaveSlotObject, (int)CurrentSaveSlot, IsEncrypted))
+            {
+                Debug.Log($"Saved {scene.name}");
+
+            }
+            else
+            {
+                Debug.LogError("Could not save file");
+            }
+            HasSavedGame = true;
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        DebugSceneName = SceneManager.GetActiveScene().name;
+       
 
 
         if (_InMenu)
@@ -55,7 +81,7 @@ public class GameManager : MonoBehaviour
             _pauseMenuOBJ.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             _pauseMenu = !_pauseMenu;
         }
@@ -74,24 +100,26 @@ public class GameManager : MonoBehaviour
 
 
     }
-    public void SaveScene()
+    public void SaveCurrentScene()
     {
         string _currentSceneName = SceneManager.GetActiveScene().name;
-        if (!_InMenu)
+        UI_Animator.SetTrigger("Save");
+        SaveSlotObject.UnityScenestring = _currentSceneName;
+        if (dataService.SaveData(Savename, SaveSlotObject, (int)CurrentSaveSlot, IsEncrypted))
         {
-            SaveSlotObject.UnityScenestring = _currentSceneName;
-            if (dataService.SaveData(Savename, SaveSlotObject, (int)CurrentSaveSlot, IsEncrypted))
-            {
-
-            }
-            else
-            {
-                Debug.LogError("Could not save file");
-            }
+            Debug.Log($"Saved {_currentSceneName}");
+            
+        }
+        else
+        {
+            Debug.LogError("Could not save file");
+            
         }
 
-        
+
     }
+
+    
 
     public void TogglePause()
     {

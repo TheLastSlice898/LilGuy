@@ -78,15 +78,16 @@ namespace Slice
                     tempMenuNames.Add(MenuAsset.name);
                 }
                 sR.MenuNames = tempMenuNames;
-
+                Debug.Log("Added Menu Names");
                 List<string> tempSceneNames = new List<string>();
                 foreach (SceneAsset sceneAsset in sR.sceneAssets)
                 {
                     tempSceneNames.Add(sceneAsset.name);
                 }
                 sR.sceneNames = tempSceneNames;
+                Debug.Log("Added Scene Names");
             }
-            
+
         }
 #endif // Ends the #UNITY_EDITOR if
     }
