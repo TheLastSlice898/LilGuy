@@ -1352,14 +1352,14 @@ MonoBehaviour:
   textDialogue: {fileID: 1142899226}
   lines:
   - Her eyes light up
-  - 'Zoe: You really think so?'
+  - 'Zoe: "You really think so?"'
   - She says hesitantly
-  - 'You: Well, do you want to do photography?'
+  - 'You: "Well, do you want to do photography?"'
   - You ask, a hint of force in your voice
-  - She looks at you with a contempt face.
-  - 'Zoe: I really do, it''s something I have done since I was in high school, My
-    mum was obsessed with it and taught me everything I know'
-  - 'Zoe: I think she would want me to continue'
+  - She looks at you with a contempt face
+  - 'Zoe: "I really do, it''s something I have done since I was in high school, My
+    mum was obsessed with it and taught me everything I know"'
+  - 'Zoe: "I think she would want me to continue"'
   - She starts getting teary and looks to you for consolidation
   speed: 0.03
   choices: {fileID: 916753758}

@@ -1354,9 +1354,9 @@ MonoBehaviour:
   - She looks slightly taken aback, not expecting you to answer in that way, however,
     her face then drops, like she knew inside all along, that, that was the true
     answer.
-  - "Zoe: You\u2019re right, I mean even though I got into university and I want
-    to do photography full time"
-  - 'Zoe: it''s probably not even something that I would go far in'
+  - "Zoe: \"You\u2019re right, I mean even though I got into university for photography
+    and I would love to pursue it full time\""
+  - 'Zoe: "it''s probably not even something that I would go far in"'
   - She slumps onto the counter and begins to sob
   speed: 0.03
   choices: {fileID: 916753758}

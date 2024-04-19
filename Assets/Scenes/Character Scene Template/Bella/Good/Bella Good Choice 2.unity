@@ -1352,15 +1352,15 @@ MonoBehaviour:
   textDialogue: {fileID: 1142899226}
   lines:
   - Feeling incredibly guilty, you walk back to the counter
-  - 'You: Tell me more Zoe do, YOU want to do photography?'
-  - 'Zoe: I really do, it''s something I have done since I was in high school, My
-    mum was obsessed with it and taught me everything I know'
-  - 'Zoe: I think she would want me to continue'
-  - She looks at you with a contempt face.
-  - 'Zoe: I really do, it''s something I have done since I was in high school, My
-    mother was obsessed with it and taught me everything I know'
+  - 'You: "Tell me more Zoe do, YOU want to do photography?"'
+  - 'Zoe: "I really do, it''s something I have done since I was in high school, My
+    mum was obsessed with it and taught me everything I know"'
+  - 'Zoe: "I think she would want me to continue"'
+  - She looks at you with a contempt face
+  - 'Zoe: "I really do, it''s something I have done since I was in high school, My
+    mother was obsessed with it and taught me everything I know"'
   - She starts getting teary and looks to you for consolidation
-  - 'Zoe: I think she''d want me to continue '
+  - 'Zoe: "I think she''d want me to continue"'
   speed: 0.03
   choices: {fileID: 916753758}
 --- !u!114 &1647429532

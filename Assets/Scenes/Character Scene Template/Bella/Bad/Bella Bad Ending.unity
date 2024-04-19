@@ -455,6 +455,10 @@ MonoBehaviour:
   finalLines:
   - "You push open the door and leave with your slime, you can\u2019t help but feel
     a little guilty for the conversation you just had"
+  - Looking to your side, you notice that the slime you had adopted earlier seems
+    a little different
+  - It seems agitated and has grown into a black mass, maybe you should have helped
+    Zoe
   speeds: 0.03
 --- !u!114 &1034071252
 MonoBehaviour:

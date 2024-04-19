@@ -755,21 +755,25 @@ MonoBehaviour:
   textDialogueEnd: {fileID: 1142899226}
   finalLines:
   - You give her a slight smile and nod for her to continue
-  - 'Zoe: I think this stemmed from a bad mark I had gotten from one of my professors.'
-  - 'Zoe: I took their mark to heart and it has just sent me on a spiral'
-  - "You: Well I think it\u2019s just them wanting you to get better, It does suck
+  - 'Zoe: "I think this all stemmed from a bad grade I had gotten from one of my
+    professors"'
+  - 'Zoe: "I took the grade to heart and it has just sent me on a spiral"'
+  - "You: \"Well I think it\u2019s just them wanting you to get better, It does suck
     getting harsh or even critical feedback, especially when you put your everything
-    into it"
+    into it\""
   - 'Zoe nods in agreement '
   - "Zoe: \u201CYou\u2019re right, I shouldn\u2019t let that get the best of me,
-    I need to remember that I am still learning and these things will happen"
-  - 'Zoe: Here, have another one on the house'
+    I need to remember that I am still learning and critical feedback isn't an attack
+    on my work, it's to help me get better!\" "
+  - 'Zoe: "Here, have another drink on the house"'
   - She hands you another chai, this time with a heart and a thank you drawn on the
     lid
-  - She now has a more cheerful deminer about her
+  - She now has a more cheerful demeanor about her
   - She waves you goodbye and continues on her work.
   - As you go to leave, you can't help but feel a burst of warmth fly over you, you
     did a good thing today
+  - Looking to your side, the slime pet has beautiful aura to it, seems that this
+    series of choices was a beautiful thing
   speeds: 0.03
   MyEvent:
     m_PersistentCalls:
