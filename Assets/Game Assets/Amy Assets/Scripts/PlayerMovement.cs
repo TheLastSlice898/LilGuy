@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -9,16 +10,20 @@ public class PlayerMovement : MonoBehaviour
     public float delay = 1f; //delay jump so player cant jump endlessly into the sky
     private bool jumping = false;
    
+   
 
     private Rigidbody2D cube;
     
 
     public GameObject PlayerModel;
+    private SpriteRenderer spriteRenderer;
+    public Animator animator;
+
+
     void Start()
     {
         cube = GetComponent<Rigidbody2D>();
-      
-        
+        animator = GetComponent<Animator>();
 
     }
 
@@ -27,7 +32,19 @@ public class PlayerMovement : MonoBehaviour
         // Move left and right
         float moveDirection = Input.GetAxis("Horizontal");
         cube.velocity = new Vector2(moveDirection * speed, cube.velocity.y);
-        
+
+        //Animation 
+        if(moveDirection ==0)
+        {
+            animator.SetFloat("Speed", 0);
+
+        }
+        else if(moveDirection != 0) 
+        {
+            animator.SetFloat("Speed", 1); 
+        }
+      
+
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && !jumping)
         {
@@ -56,5 +73,12 @@ public class PlayerMovement : MonoBehaviour
 
         // set jump to false after the delay
         jumping = false;
+    }
+
+    public void flip()
+    {
+        cube.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
+        spriteRenderer.flipX = cube .velocity.x > 0f;   
+        
     }
 }
