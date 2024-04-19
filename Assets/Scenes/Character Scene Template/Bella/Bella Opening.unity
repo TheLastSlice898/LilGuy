@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -399,38 +399,38 @@ MonoBehaviour:
   lines:
   - You approach the counter and look to find an employee who looks incredibly grumpy
   - 'Before opening your mouth to say hello, the grumpy barista cuts you off abruptly '
-  - 'Grumpy Barista: Hello and welcome to the cafe, where we dont just serve coffee,
-    we also serve smiles'
+  - 'Grumpy Barista: "Hello and welcome to the cafe, where we dont just serve coffee,
+    we also serve smiles"'
   - As she says this, she moves her arm up and makes a thumbs up whilst rolling her
-    eyes.
-  - 'Grumpy Barista: What can I get you?'
-  - She says staring into your soul with lifeless eyes.
-  - 'You: Well hello to you too, ermm'
+    eyes
+  - 'Grumpy Barista: "What can I get you?"'
+  - She says staring into your soul with lifeless eyes
+  - 'You: "Well hello to you too, ermm"'
   - You pause as you try and look for her name badge. Once again she rolls her eyes
     and huffs begrudgingly responding
-  - 'Grumpy Barista: Zoe'
+  - 'Grumpy Barista: "Zoe"'
   - As you look at the chalkboard behind her, scanning the menu, overwhelmed at all
     the choices, you decide to fall back on your old reliable
-  - 'You: Almond Chai please, extra hot'
+  - 'You: "Almond Chai please, extra hot"'
   - You exclaim with a grin. She walks over to the coffee machine and starts on your
-    order.
-  - 'You: So Zoe...'
-  - 'You: How has your day been?'
+    order
+  - 'You: "So Zoe..."'
+  - 'You: "How has your day been?"'
   - You ask, trying to make the situation feel less awkward
-  - 'Zoe: You are the first customer to ask me how MY day has been, she grins'
-  - "Zoe: and since you have given me the easiest order today, you my fury little
+  - 'Zoe: "You are the first customer to ask me how MY day has been, she grins"'
+  - "Zoe: \"and since you have given me the easiest order today, you my fury little
     friend will get to hear my woes\u201D "
-  - 'You smile back at her, finally getting her to crack open slightly.  '
-  - 'You: Go on..'
+  - You smile back at her, finally getting her to crack open slightly
+  - 'You: "Go on.."'
   - "Zoe: So currently I am working on this photography piece that is supposed to
     represent colours in motion, I feel like it\u2019s terrible and that I am just
     photographing just because I can and not contributing to anything meaningful"
   - "She hands you your drink and you take a sip. This is the best drink you\u2019ve
     had in a while you think looking up at here, actively listening"
-  - "Zoe: I also really love my job here and the customers but its the same issue,
+  - "Zoe: \"I also really love my job here and the customers but its the same issue,
     I feel like I\u2019m just not great at anything, I love photography and want
-    to pursue it professionally"
-  - 'Zoe: What should I do ?'
+    to pursue it professionally\""
+  - 'Zoe: "What should I do ?"'
   speed: 0.03
   choices: {fileID: 1933192136}
 --- !u!114 &178628618

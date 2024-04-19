@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1352,14 +1352,14 @@ MonoBehaviour:
   textDialogue: {fileID: 1142899226}
   lines:
   - Her eyes light up
-  - 'Zoe: You really think so?'
+  - 'Zoe: "You really think so?"'
   - She says hesitantly
-  - 'You: Well, do you want to do photography?'
+  - 'You: "Well, do you want to do photography?"'
   - You ask, a hint of force in your voice
-  - She looks at you with a contempt face.
-  - 'Zoe: I really do, it''s something I have done since I was in high school, My
-    mum was obsessed with it and taught me everything I know'
-  - 'Zoe: I think she would want me to continue'
+  - She looks at you with a contempt face
+  - 'Zoe: "I really do, it''s something I have done since I was in high school, My
+    mum was obsessed with it and taught me everything I know"'
+  - 'Zoe: "I think she would want me to continue"'
   - She starts getting teary and looks to you for consolidation
   speed: 0.03
   choices: {fileID: 916753758}

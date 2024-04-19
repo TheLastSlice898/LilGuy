@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1354,9 +1354,9 @@ MonoBehaviour:
   - She looks slightly taken aback, not expecting you to answer in that way, however,
     her face then drops, like she knew inside all along, that, that was the true
     answer.
-  - "Zoe: You\u2019re right, I mean even though I got into university and I want
-    to do photography full time"
-  - 'Zoe: it''s probably not even something that I would go far in'
+  - "Zoe: \"You\u2019re right, I mean even though I got into university for photography
+    and I would love to pursue it full time\""
+  - 'Zoe: "it''s probably not even something that I would go far in"'
   - She slumps onto the counter and begins to sob
   speed: 0.03
   choices: {fileID: 916753758}
