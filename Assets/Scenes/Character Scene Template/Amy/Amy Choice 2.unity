@@ -345,8 +345,8 @@ MonoBehaviour:
     again. Australia is introducing laws against unaccep-tea-ble calls and messages
     outside of work hours.\u201D "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
+  m_sharedMaterial: {fileID: -484101542852208939, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -876,8 +876,8 @@ MonoBehaviour:
   m_text: "\u201CThat\u2019s nothing. I just finished working 402 weeks of 190-hour
     days surviving off nothing but microwave dinners and coffee.\u201D "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
+  m_sharedMaterial: {fileID: -484101542852208939, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1422,8 +1422,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Text Here
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
-  m_sharedMaterial: {fileID: -225222169392583622, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
+  m_sharedMaterial: {fileID: -484101542852208939, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
