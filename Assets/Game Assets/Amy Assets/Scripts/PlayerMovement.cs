@@ -34,15 +34,16 @@ public class PlayerMovement : MonoBehaviour
         cube.velocity = new Vector2(moveDirection * speed, cube.velocity.y);
 
         //Animation 
-        if(moveDirection ==0)
+        if (moveDirection == 0 )
         {
-            animator.SetFloat("Speed", 0);
-
+            animator.SetBool("Idle", true);
         }
-        else if(moveDirection != 0) 
+        else
         {
-            animator.SetFloat("Speed", 1); 
+            animator.SetBool("Idle", false);
         }
+        animator.SetFloat("Speed", moveDirection);
+        
       
 
         // Jumping
