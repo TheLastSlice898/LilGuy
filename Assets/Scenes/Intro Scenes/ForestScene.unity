@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44835287, g: 0.4983884, b: 0.57561105, a: 1}
+  m_IndirectSpecularColor: {r: 0.44835275, g: 0.49838787, b: 0.5756102, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1725,7 +1725,7 @@ GameObject:
   - component: {fileID: 407018204}
   - component: {fileID: 407018207}
   m_Layer: 0
-  m_Name: froggy
+  m_Name: Frog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
