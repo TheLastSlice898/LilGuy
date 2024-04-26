@@ -68,15 +68,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Paused
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291935109
-  m_fontColor: {r: 0.5226504, g: 0.7335979, b: 0.8207547, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -93,13 +93,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.55
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -286,7 +286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.001739502, y: 0}
+  m_AnchoredPosition: {x: -0.001739502, y: -5}
   m_SizeDelta: {x: 0.003418, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3745351053579882943
@@ -319,8 +319,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'SAVED THE GAME! '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
+  m_sharedMaterial: {fileID: -484101542852208939, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 82.9
+  m_fontSize: 87.85
   m_fontSizeBase: 110.65
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2061,7 +2061,7 @@ MonoBehaviour:
   SceneHolder: {fileID: 11400000, guid: ead7c73e4fccaec40a54aaf99ec20ad2, type: 2}
   UI_Animator: {fileID: 8764034671205220278}
   AudioSource: {fileID: 6059331973546510982}
-  SaveSlotObject: {fileID: 11400000, guid: 7f8cf627db8cc1b4a9e974cf643cd496, type: 2}
+  SaveSlotObject: {fileID: 0}
   CurrentSaveSlot: 0
   IsEncrypted: 0
   SceneCurrentName: 

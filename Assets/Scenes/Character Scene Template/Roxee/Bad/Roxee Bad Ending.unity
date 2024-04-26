@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Dialogue Here '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
-  m_sharedMaterial: {fileID: -225222169392583622, guid: 8f7ee2331533a844eba14ab0ad3711c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
+  m_sharedMaterial: {fileID: -484101542852208939, guid: de2af91ac66cf3f49939e582c0aa58cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -207,8 +207,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -332,63 +332,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561296153}
   m_CullTransparentMesh: 1
---- !u!1001 &648668595
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.099858
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.0409575
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533245749609259350, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6675080618715982215, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0a44f2d7de068e1449199537b536ee20, type: 3}
 --- !u!1 &658556353
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +457,9 @@ MonoBehaviour:
     discomfort.
   - fter half an hour, Freya excuses herself, and you don't see her again.
   speeds: 0.03
+  MyEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1034071252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,4 +808,3 @@ SceneRoots:
   - {fileID: 1611512120}
   - {fileID: 1696571125}
   - {fileID: 658556356}
-  - {fileID: 648668595}
